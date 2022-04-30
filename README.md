@@ -37,7 +37,7 @@ Takım 13
 
 ## Product Backlog URL
 
-[Trello Plan Odası](https://trello.com/b/avXJQXOh/planodas%C4%B113)
+[Trello Plan Odası](https://trello.com/invite/b/avXJQXOh/f0948a7985ad98899c7c13c9e1cfd982/planodasi13)
 
 ---
 
