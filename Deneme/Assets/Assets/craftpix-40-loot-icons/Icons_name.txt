@@ -1,0 +1,40 @@
+1 pile of coins
+2 Overgrown Crate
+3 Emerald
+4 Ruins
+5 Torn Flag
+6 Bump
+7 Emerald Key
+8 Night Mushroom
+9 Ax
+10 Bottle
+11 Feather
+12 Cheese
+13 Raven Amulet
+14 Pile of stones
+15 Jasper
+16 Spirit Orb
+17 Tail
+18 Boar skin
+19 Meat
+20 Burdyuk
+21 Chitin Shield
+22 Orb of Blood
+23 Guard Sword
+24 Ham
+25 Cloth
+26 Amulet
+27 Map
+28 Envelope
+29 Letter
+30 Test tube
+31 Bomb
+32 Axis
+33 Mechanism
+34 Wrench
+35 Bottle of liquor
+36 Pyrope
+37 Boar Tusk
+38 Sausage
+39 Boar's Ring
+40 Horned Helm

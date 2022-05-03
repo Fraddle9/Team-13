@@ -1,0 +1,40 @@
+1 Handful of coins
+2 Barrel
+3 Pointer
+4 Lantern
+5 White flag
+6 Red Crystal
+7 Ruby
+8 Mine
+9 Golden Key
+10 Chain
+11 Sapphire
+12 Orb of Light
+13 Pollen
+14 Chest
+15 Necklace of teeth
+16 Can of Slime
+17 Ribs (meat)
+18 Bear skin
+19 Wooden spoon
+20 Spider Paw
+21 Spider Eye
+22 Poison gland
+23 Orb of Magic
+24 Magic Crystal
+25 Rope
+26 Mana Bottle
+27 Broadsword
+28 Fish Bones
+29 Piece of Map (2/3)
+30 Pistol
+31 Cobweb
+32 Spider's Web Orb
+33 Spider Egg
+34 Spiderweb Necklace
+35 Stone Orb
+36 Cobblestone
+37 Flint
+38 Emerald Ring
+39 Gold Necklace
+40 Giant Bone
