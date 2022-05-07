@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Zemin
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1521477063
+    locked: 0
+  - name: Midground
+    uniqueID: 1987829801
+    locked: 0
+  - name: Foreground
+    uniqueID: 3386128105
     locked: 0
