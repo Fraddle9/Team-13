@@ -1,0 +1,641 @@
+fileFormatVersion: 2
+guid: 00e9a19aa278f75418e116b89613be38
+labels:
+- Ui
+- Button
+- Panel
+- Texture
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Blue-GoldP_4k_0
+  - first:
+      213: 21300002
+    second: Blue-GoldP_4k_3
+  - first:
+      213: 21300004
+    second: Blue-GoldP_4k_4
+  - first:
+      213: 21300006
+    second: Blue-GoldP_4k_5
+  - first:
+      213: 21300008
+    second: Blue-GoldP_4k_1
+  - first:
+      213: 21300010
+    second: Blue-GoldP_4k_2
+  - first:
+      213: 21300012
+    second: Blue-GoldP_4k_6
+  - first:
+      213: 21300014
+    second: Blue-GoldP_4k_14
+  - first:
+      213: 21300016
+    second: Blue-GoldP_4k_11
+  - first:
+      213: 21300018
+    second: Blue-GoldP_4k_17
+  - first:
+      213: 21300020
+    second: Blue-GoldP_4k_18
+  - first:
+      213: 21300022
+    second: Blue-GoldP_4k_8
+  - first:
+      213: 21300024
+    second: Blue-GoldP_4k_15
+  - first:
+      213: 21300026
+    second: Blue-GoldP_4k_21
+  - first:
+      213: 21300028
+    second: Blue-GoldP_4k_9
+  - first:
+      213: 21300030
+    second: Blue-GoldP_4k_10
+  - first:
+      213: 21300032
+    second: Blue-GoldP_4k_20
+  - first:
+      213: 21300034
+    second: Blue-GoldP_4k_12
+  - first:
+      213: 21300036
+    second: Blue-GoldP_4k_7
+  - first:
+      213: 21300038
+    second: Blue-GoldP_4k_19
+  - first:
+      213: 21300040
+    second: Blue-GoldP_4k_16
+  - first:
+      213: 21300042
+    second: Blue-GoldP_4k_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 16
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3389
+        width: 1272
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 85, y: 70, z: 75, w: 79}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_2
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2760
+        width: 1271
+        height: 1274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 61, z: 71, w: 82}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_3
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 2756
+        width: 640
+        height: 1278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 79, y: 70, z: 72, w: 86}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_4
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 2752
+        width: 328
+        height: 1285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 76, z: 68, w: 86}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_5
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 3702
+        width: 332
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 72, y: 54, z: 73, w: 66}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 3042
+        width: 1274
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 66, z: 79, w: 79}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_6
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 3349
+        width: 328
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 724
+        width: 1277
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 84, y: 75, z: 72, w: 61}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_16
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 65
+        width: 1269
+        height: 1269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 81, z: 66, w: 72}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_17
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 59
+        width: 646
+        height: 1283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 84, y: 82, z: 72, w: 72}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_18
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 64
+        width: 329
+        height: 1274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 77, y: 88, z: 66, w: 79}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_20
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 420
+        width: 337
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_15
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 59
+        width: 1276
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 84, y: 79, z: 72, w: 69}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_21
+      rect:
+        serializedVersion: 2
+        x: 3695
+        y: 65
+        width: 334
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 65, y: 58, z: 65, w: 54}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_9
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1497
+        width: 1243
+        height: 1236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_10
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1366
+        width: 1237
+        height: 1236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_11
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 2102
+        width: 635
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_12
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 1359
+        width: 627
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_7
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 2890
+        width: 283
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_19
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 776
+        width: 273
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2695
+        width: 332
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-GoldP_4k_13
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1080
+        width: 338
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
