@@ -3600,6 +3600,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742adb58f788c4d489ee1ac3b89a5c9a, type: 3}
+--- !u!1001 &810419727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491419, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124343405591491422, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
+      propertyPath: m_Name
+      value: Woodcutter Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd6798a50d9212642bf7931f876f4273, type: 3}
 --- !u!1001 &831846696
 PrefabInstance:
   m_ObjectHideFlags: 0
