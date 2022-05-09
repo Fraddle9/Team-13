@@ -74,6 +74,7 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://user-images.githubusercontent.com/93331083/167426161-d7c026da-c528-4e96-8763-7f5e1593c7f3.png)
   ![Screenshot 2](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
+  ![Screenshot 3][WhatsApp Image 2022-05-09 at 17 43 11](https://user-images.githubusercontent.com/104396833/167444277-d9b626e3-25ce-4a22-9fbd-25eebb2fab55.jpeg)
 
 
 - **Sprint Review**: 
