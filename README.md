@@ -57,12 +57,12 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 - (https://docs.google.com/document/d/1MFHJp6IhHvx5I_e5r3fulWQqbdwJNB-JtPV2aDmMLUg/edit?usp=sharing)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
+![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
  
-![Backlog 2](![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/167419318-9b9eb3e2-112e-47e5-94a2-beee1377e8a0.PNG)
-) 
-![Backlog 3](![trello çalışma alanı 3](https://user-images.githubusercontent.com/104396833/167419353-3a5700d3-f1e7-4b64-b82a-4783c98ecba3.PNG)
-)
+![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/167419318-9b9eb3e2-112e-47e5-94a2-beee1377e8a0.PNG)
+
+![trello çalışma alanı 3](https://user-images.githubusercontent.com/104396833/167419353-3a5700d3-f1e7-4b64-b82a-4783c98ecba3.PNG)
+
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
