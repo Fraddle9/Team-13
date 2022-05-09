@@ -57,27 +57,29 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 - (https://docs.google.com/document/d/1MFHJp6IhHvx5I_e5r3fulWQqbdwJNB-JtPV2aDmMLUg/edit?usp=sharing)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
+![Backlog 1](![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
  
-![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/167419318-9b9eb3e2-112e-47e5-94a2-beee1377e8a0.PNG)
-
-![trello çalışma alanı 3](https://user-images.githubusercontent.com/104396833/167419353-3a5700d3-f1e7-4b64-b82a-4783c98ecba3.PNG)
-
+![Backlog 2](![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/167419318-9b9eb3e2-112e-47e5-94a2-beee1377e8a0.PNG)
+) 
+![Backlog 3](![trello çalışma alanı 3](https://user-images.githubusercontent.com/104396833/167419353-3a5700d3-f1e7-4b64-b82a-4783c98ecba3.PNG)
+)
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
   ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
 
 - **Sprint Review**: 
-Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
+Alınan kararlar: Oyun stroy-driven düzeneği ile gidecektir. Burada zaman kısıtlaması olduğu için işin bitmesine engel olacak zor/zaman alan mekaniklerden kaçınıp oyuncu da rahatsız etmeyecek düzeyde çoğunlukla hikaye anlatımı ile devam edilmesine karar verildi. Bunun ardından oyuncu personası ile empati haritası yapılarak neler isteyebileceği ve nelerden hoşlanabileceği gibi konular üzerinden tekrar işlenen konu üzerinde mutabık kalındı. Oyuncuyu hikaye içinde daha çok eğlendirmek ve oyun süresini uzatmak için meme, caps, espriler ile desteklenmesine karar verildi. Mitolojik ve tarihi anlatının sıkıcılığını kırmak için bir mentör olması konusunda anlaşmaya gidildi.
+ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
 
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
-  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
-  - Unit test'ler için ayrılan efor/saat arttırılmalı 
-
+  - Takım içindeki görev dağılımıyla artık kişisel takvimlere uygun olarak devam etmesine karar verildi. Yazılım ve tasarım olarak ikili micro grup daha sonra bütün olarak haftalık toplantılarda çıkan ürün üzerinden tartışma yapılmasına karar kınıldı.
+  - Mekanik denemelerindeki zaman aralığının kısaltılmasına ve takvimin yoğunlaştırılmasına, hızlanmaya karar verildi.
+  
+  
 -**Diğer Notlar**:
-- N/A
+- Tasarım için storyboard veya animatic ile olay akışının gözden geçirilmesi çıkacak işin nasıl olacağını görmek için iyi olabilir. 
+
 
 ---
 
