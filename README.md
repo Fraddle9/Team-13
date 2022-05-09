@@ -68,15 +68,14 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
   ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
 
 - **Sprint Review**: 
-Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
+ Alınan kararlar: Oyun stroy-driven düzeneği ile gidecektir. Burada zaman kısıtlaması olduğu için işin bitmesine engel olacak zor/zaman alan mekaniklerden kaçınıp oyuncu da rahatsız etmeyecek düzeyde çoğunlukla hikaye anlatımı ile devam edilmesine karar verildi. Bunun ardından oyuncu personası ile empati haritası yapılarak neler isteyebileceği ve nelerden hoşlanabileceği gibi konular üzerinden tekrar işlenen konu üzerinde mutabık kalındı. Oyuncuyu hikaye içinde daha çok eğlendirmek ve oyun süresini uzatmak için meme, caps, espriler ile desteklenmesine karar verildi. Mitolojik ve tarihi anlatının sıkıcılığını kırmak için bir mentör olması konusunda anlaşmaya gidildi. Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
 
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
-  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
-  - Unit test'ler için ayrılan efor/saat arttırılmalı 
+  - Takım içindeki görev dağılımıyla artık kişisel takvimlere uygun olarak devam etmesine karar verildi. Yazılım ve tasarım olarak ikili micro grup daha sonra bütün olarak haftalık toplantılarda çıkan ürün üzerinden tartışma yapılmasına karar kınıldı.
+  - Mekanik denemelerindeki zaman aralığının kısaltılmasına ve takvimin yoğunlaştırılmasına, hızlanmaya karar verildi.
 
 -**Diğer Notlar**:
-- N/A
+- Tasarım için storyboard veya animatic ile olay akışının gözden geçirilmesi çıkacak işin nasıl olacağını görmek için iyi olabilir.
 
 ---
 
