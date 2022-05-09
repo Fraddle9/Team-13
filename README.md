@@ -68,13 +68,13 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
 ![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/167419318-9b9eb3e2-112e-47e5-94a2-beee1377e8a0.PNG)
-
+![trello çalışma alanı 3](https://user-images.githubusercontent.com/104396833/167419353-3a5700d3-f1e7-4b64-b82a-4783c98ecba3.PNG)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://user-images.githubusercontent.com/93331083/167426161-d7c026da-c528-4e96-8763-7f5e1593c7f3.png)
-  ![Screenshot 2](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
-  ![Screenshot 3](https://drive.google.com/file/d/121y14H2Zn7kvLhnBR18EXHGI9x2MGqmv/view?usp=sharing)
-  ![Screenshot 4](https://drive.google.com/file/d/1ArXfJaufihWLb6w34tF4rp_7VYILxQR8/view?usp=sharing)
+  ![Screenshot 1](https://user-images.githubusercontent.com/93331083/167448451-ae454eea-46f0-4ea6-be51-3f94892bdd38.jpeg)
+  ![Screenshot 2](https://user-images.githubusercontent.com/93331083/167448467-f4f15c63-94d0-4741-8cb1-a6187a510429.jpeg)
+  ![Screenshot 3](https://user-images.githubusercontent.com/93331083/167426161-d7c026da-c528-4e96-8763-7f5e1593c7f3.png)
+  ![Screenshot 4](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
 
 - **Sprint Review**: 
  Alınan kararlar: Oyun stroy-driven düzeneği ile gidecektir. Burada zaman kısıtlaması olduğu için işin bitmesine engel olacak zor/zaman alan mekaniklerden kaçınıp oyuncu da rahatsız etmeyecek düzeyde çoğunlukla hikaye anlatımı ile devam edilmesine karar verildi. Bunun ardından oyuncu personası ile empati haritası yapılarak neler isteyebileceği ve nelerden hoşlanabileceği gibi konular üzerinden tekrar işlenen konu üzerinde mutabık kalındı. Oyuncuyu hikaye içinde daha çok eğlendirmek ve oyun süresini uzatmak için meme, caps, espriler ile desteklenmesine karar verildi. Mitolojik ve tarihi anlatının sıkıcılığını kırmak için bir mentör olması konusunda anlaşmaya gidildi. Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
