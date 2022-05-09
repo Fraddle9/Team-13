@@ -49,13 +49,21 @@ Takım 13
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. 2. Sprint 200 puan son sprint ise 100 puan şeklinde düşünüldü.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise 100 puan şeklinde düşünüldü.
+  - [1.SPRİNTDONE](https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluştuurulmuş ve genel, değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
 
 Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. 
 
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack/Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örnekleri tek dosya halinde ss'lerin word dosyası halinde Readme'de tarafımızdan paylaşılmaktadır: [Daily SS](https://docs.google.com/document/d/1MFHJp6IhHvx5I_e5r3fulWQqbdwJNB-JtPV2aDmMLUg/edit?usp=sharing)
+
+![tımelıne1](https://user-images.githubusercontent.com/93331083/167428671-e4205b91-8508-4665-a874-5e61eec65012.jpg)
+- [Lean Canvas](https://drive.google.com/file/d/1oS9W6FHkSC4HEr7QNcAFvypHjtmXReRA/view?usp=sharing)
+- [Scope](https://drive.google.com/file/d/162vUhMUhRB36Vy4XWiM53mDT22w0BsaK/view?usp=sharing)
+- [Empathy Map](https://drive.google.com/file/d/1qtA5y4Khyq3IOGu4-OjqlyuQlva1PuZW/view?usp=sharing)
+- [Elevator Pich](https://drive.google.com/file/d/1l-VWgD_BquNp835GHR5hH4FzyQ-PS3_m/view?usp=sharing)
+- [Trade Of Slider](https://drive.google.com/file/d/1-kDkraAPfosSYcqray4g3laj1IuYPvAu/view?usp=sharing)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/167419231-a9d5d370-a179-48ac-9e74-5aaaf617c094.PNG)
@@ -77,7 +85,7 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 
 -**Diğer Notlar**:
 - Tasarım için storyboard veya animatic ile olay akışının gözden geçirilmesi çıkacak işin nasıl olacağını görmek için iyi olabilir.
-
+- 
 ---
 
 # Sprint 2
