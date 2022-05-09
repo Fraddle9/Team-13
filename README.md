@@ -64,8 +64,8 @@ Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük ba
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
+  ![Screenshot 1](https://drive.google.com/file/d/1s7AaH0o37cEiRjYqTcfkqLWoc8VwLaL1/view?usp=sharing)
+  ![Screenshot 2](https://drive.google.com/file/d/1Xfwt0AnvXM6nPyKknEy-XXXryAwOmCWf/view?usp=sharing)
 
 - **Sprint Review**: 
  Alınan kararlar: Oyun stroy-driven düzeneği ile gidecektir. Burada zaman kısıtlaması olduğu için işin bitmesine engel olacak zor/zaman alan mekaniklerden kaçınıp oyuncu da rahatsız etmeyecek düzeyde çoğunlukla hikaye anlatımı ile devam edilmesine karar verildi. Bunun ardından oyuncu personası ile empati haritası yapılarak neler isteyebileceği ve nelerden hoşlanabileceği gibi konular üzerinden tekrar işlenen konu üzerinde mutabık kalındı. Oyuncuyu hikaye içinde daha çok eğlendirmek ve oyun süresini uzatmak için meme, caps, espriler ile desteklenmesine karar verildi. Mitolojik ve tarihi anlatının sıkıcılığını kırmak için bir mentör olması konusunda anlaşmaya gidildi. Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
