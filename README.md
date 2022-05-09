@@ -6,11 +6,11 @@ Takım 13
 
 ## Takım Üyeleri
 
-- Recep Akkaya: Product Owner / Developer
+- Nuh Aktürk: Product Owner/Developer
 - Dilek Oflaz: Scrum Master / Game Artist
 - Oğuzhan Akkök: Game Artist / Developer
 - İrem Ayşe Kayacıoğlu: Team Member/Developer
-- Nuh Aktürk: Team Member/Developer
+- Recep Akkaya: Team Member/Developer
 
 ## Ürün İsmi 
 
@@ -49,12 +49,12 @@ Takım 13
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise 100 puan şeklinde düşünüldü.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint daha çok işlenecek konunun orturtulması ve denemelere başlanılması olarak planlanıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
   - [1.SPRİNTDONE](https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing)
 
-- **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluştuurulmuş ve genel, değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
+- **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
 
-Timeline'da yapılacak işler Trello'da iş listesinde yer alırken, günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. 
+Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde yer alırken aynı zamanda 1. sprintde kişilerin kendi iş kartlarında gün bazında çalışmaları yer almaktadır. Günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. 
 
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack/Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örnekleri tek dosya halinde ss'lerin word dosyası halinde Readme'de tarafımızdan paylaşılmaktadır: [Daily SS](https://docs.google.com/document/d/1MFHJp6IhHvx5I_e5r3fulWQqbdwJNB-JtPV2aDmMLUg/edit?usp=sharing)
 
