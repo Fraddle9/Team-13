@@ -41,7 +41,7 @@ Takım 13
 
 ---
 
-# Sprint 1 (Eklemeler yapılacak, düzenleniyor)
+# Sprint 1 
 
 - **Sprint Notları**: 
   - [1.Sprint Toplantı Notları](https://docs.google.com/document/d/1PyP4j02OAkFclT4UaoY6SGLTWYHnZzA9vOsGMP7Zwq4/edit?usp=sharing)
