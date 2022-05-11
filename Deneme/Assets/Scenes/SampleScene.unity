@@ -1230,9 +1230,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2409240895333191204, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409240895333191204, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Color.b
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409240895333191204, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409240895333191204, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5686275
+      objectReference: {fileID: 0}
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
       value: ConversationManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x
@@ -2590,6 +2610,10 @@ GameObject:
   - component: {fileID: 594376639}
   - component: {fileID: 594376638}
   - component: {fileID: 594376652}
+  - component: {fileID: 594376656}
+  - component: {fileID: 594376655}
+  - component: {fileID: 594376654}
+  - component: {fileID: 594376653}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -3311,6 +3335,82 @@ MonoBehaviour:
   NodeID: 40
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &594376653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594376616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 44
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &594376654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594376616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 43
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &594376655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594376616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 42
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &594376656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594376616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 41
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5fa2b603ce0830b41a2a90c04fdfb07b, type: 3}
   Audio: {fileID: 0}
 --- !u!1001 &608302285
 PrefabInstance:
@@ -4089,24 +4189,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 41
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":712.600037,\"yPos\":-227},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hiii\xE7,
-    sadece geziniyordum. Kal sa\u011Fl\u0131cakla\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204.599976,\"yPos\":-232},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buralarda
-    bir k\xF6pr\xFC varm\u0131\u015F onu ar\u0131yordum.\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471.599976,\"yPos\":-623},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
-    ben arkeolog hayri. Sen kimsin?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-85.19995,\"yPos\":-22},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sen
-    yerini tarif et.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218.799988,\"yPos\":-22},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neden
-    gitmeyeyim?\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-81.19995,\"yPos\":237},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n
-    Avc\u0131 kendine iyi bak.\",\"parentUIDs\":[33],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":334.8,\"yPos\":190},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Erlik
-    de kim? Neyse sen \u015Fu k\xF6pr\xFCy\xFC tarif ediver.\",\"parentUIDs\":[35],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":464.8,\"yPos\":-347},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arkeolog
-    nedir hi\xE7 duymad\u0131n m\u0131?\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":782,\"yPos\":11},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n.\",\"parentUIDs\":[4],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":474.599976,\"yPos\":-739},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heeey,
-    kim var orada?!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.5999756,\"yPos\":-130},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"K\xF6pr\xFC
-    m\xFC?!! Sak\u0131n ola sak\u0131n oraya gitmeyesin.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":779.600037,\"yPos\":-110},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n.
-    Yaln\u0131z dikkatli olas\u0131n bu ma\u011Fara tekin de\u011Fildir.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":469.599976,\"yPos\":-555},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ben
-    Avc\u0131. Bu ma\u011Farada Hortlak avlar\u0131m.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-74.19995,\"yPos\":89},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ak\u0131ll\u0131s\u0131
+  CurrentIDCounter: 45
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":406.000061,\"yPos\":505},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hiii\xE7,
+    sadece geziniyordum. Kal sa\u011Fl\u0131cakla\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-102,\"yPos\":500},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buralarda
+    bir k\xF6pr\xFC varm\u0131\u015F onu ar\u0131yordum.\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":165,\"yPos\":109},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
+    ben arkeolog hayri. Sen kimsin?\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-391.799927,\"yPos\":710},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sen
+    yerini tarif et.\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-87.79999,\"yPos\":710},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neden
+    gitmeyeyim?\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-387.799927,\"yPos\":969},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n
+    Avc\u0131 kendine iyi bak.\",\"parentUIDs\":[33],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":28.2000122,\"yPos\":922},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Erlik
+    de kim? Neyse sen \u015Fu k\xF6pr\xFCy\xFC tarif ediver.\",\"parentUIDs\":[35],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":158.200012,\"yPos\":385},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arkeolog
+    nedir hi\xE7 duymad\u0131n m\u0131?\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":475.400024,\"yPos\":743},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n.\",\"parentUIDs\":[4],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":168,\"yPos\":-7},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Heeey,
+    kim var orada?!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-229,\"yPos\":602},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"K\xF6pr\xFC
+    m\xFC?!! Sak\u0131n ola sak\u0131n oraya gitmeyesin.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":473,\"yPos\":622},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sa\u011Folas\u0131n.
+    Yaln\u0131z dikkatli olas\u0131n bu ma\u011Fara tekin de\u011Fildir.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":163,\"yPos\":177},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ben
+    Avc\u0131. Bu ma\u011Farada Hortlak avlar\u0131m.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-380.799927,\"yPos\":821},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ak\u0131ll\u0131s\u0131
     beni bulmaz ki. Peki madem buradan ilerle. B\xFCy\xFCk bir sark\u0131t g\xF6receksin.
-    Sark\u0131t\u0131n az ilerisinde k\xF6pr\xFCy\xFC g\xF6r\xFCrs\xFCn.\",\"parentUIDs\":[31,36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":264.8,\"yPos\":95},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
-    k\xF6pr\xFC Erli\u011Fin saray\u0131na gider. Giden bir daha geri d\xF6nememi\u015Ftir.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":469.8,\"yPos\":-456},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arkeolog
-    mu? O ne demektir?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":467.8,\"yPos\":-270},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hiii\xE7
+    Sark\u0131t\u0131n az ilerisinde k\xF6pr\xFCy\xFC g\xF6r\xFCrs\xFCn.\",\"parentUIDs\":[31,36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-41.7999878,\"yPos\":827},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
+    k\xF6pr\xFC Erli\u011Fin saray\u0131na gider. Giden bir daha geri d\xF6nememi\u015Ftir.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":163.200012,\"yPos\":276},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arkeolog
+    mu? O ne demektir?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.200012,\"yPos\":462},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hiii\xE7
     duymad\u0131m. Neyse de hele bu ma\u011Farada ne arars\u0131n? \",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Avc\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: "Avc\u0131"
@@ -4148,6 +4248,10 @@ MonoBehaviour:
   - {fileID: 594376639}
   - {fileID: 594376638}
   - {fileID: 594376652}
+  - {fileID: 594376656}
+  - {fileID: 594376655}
+  - {fileID: 594376654}
+  - {fileID: 594376653}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
