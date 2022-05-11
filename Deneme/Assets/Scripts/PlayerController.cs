@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     private Rigidbody2D rb;
     [HideInInspector] public bool canMove = true;
-
     //Jumping
     [Header("Jumping")]
     public float jumpForce;
@@ -207,11 +206,17 @@ public class PlayerController : MonoBehaviour
         attackCount++;
         isCombo = true;
 
-        if (attackCount > 3 || attackTime > 0.6f)
+        if (attackCount > 2 || attackTime > 0.6f)
         {
             attackCount = 1;
             attackDamage = 20;
         }
         attackTime = 0f;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }

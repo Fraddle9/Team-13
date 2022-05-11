@@ -8955,7 +8955,7 @@ MonoBehaviour:
   jumpTimer: 0.25
   isGrounded: 0
   groundCheck: {fileID: 171042317}
-  groundCheckRadius: 0.53
+  groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
