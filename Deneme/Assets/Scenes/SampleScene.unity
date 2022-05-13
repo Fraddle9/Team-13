@@ -2790,11 +2790,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 292378761109352442, guid: 742adb58f788c4d489ee1ac3b89a5c9a, type: 3}
   m_PrefabInstance: {fileID: 1760796327}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &594376616
-=======
 --- !u!1 &605512036
->>>>>>> Parallax-Background
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2802,101 +2798,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 594376618}
-  - component: {fileID: 594376634}
-  - component: {fileID: 594376633}
-  - component: {fileID: 594376632}
-  - component: {fileID: 594376631}
-  - component: {fileID: 594376630}
-  - component: {fileID: 594376629}
-  - component: {fileID: 594376628}
-  - component: {fileID: 594376627}
-  - component: {fileID: 594376626}
-  - component: {fileID: 594376625}
-  - component: {fileID: 594376624}
-  - component: {fileID: 594376623}
-  - component: {fileID: 594376622}
-  - component: {fileID: 594376621}
-  - component: {fileID: 594376620}
-  - component: {fileID: 594376619}
-  - component: {fileID: 594376617}
-  - component: {fileID: 594376637}
-  - component: {fileID: 594376636}
-  - component: {fileID: 594376635}
-  - component: {fileID: 594376651}
-  - component: {fileID: 594376650}
-  - component: {fileID: 594376649}
-  - component: {fileID: 594376648}
-  - component: {fileID: 594376647}
-  - component: {fileID: 594376646}
-  - component: {fileID: 594376645}
-  - component: {fileID: 594376644}
-  - component: {fileID: 594376643}
-  - component: {fileID: 594376642}
-  - component: {fileID: 594376641}
-  - component: {fileID: 594376640}
-  - component: {fileID: 594376639}
-  - component: {fileID: 594376638}
-  - component: {fileID: 594376652}
-  - component: {fileID: 594376656}
-  - component: {fileID: 594376655}
-  - component: {fileID: 594376654}
-  - component: {fileID: 594376653}
-  m_Layer: 0
-  m_Name: ConversationEventInfo
-=======
   - component: {fileID: 605512037}
   - component: {fileID: 605512038}
   - component: {fileID: 605512039}
   m_Layer: 0
   m_Name: mavi_1
->>>>>>> Parallax-Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!114 &594376617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594376616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 21
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!4 &594376618
-=======
 --- !u!4 &605512037
->>>>>>> Parallax-Background
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 594376616}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 707686537}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &594376619
-=======
   m_GameObject: {fileID: 605512036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2957,13 +2874,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &605512039
->>>>>>> Parallax-Background
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 594376616}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3716,7 +3631,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5fa2b603ce0830b41a2a90c04fdfb07b, type: 3}
   Audio: {fileID: 0}
-=======
   m_GameObject: {fileID: 605512036}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3724,7 +3638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0, y: 0}
->>>>>>> Parallax-Background
 --- !u!1001 &608302285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7807,11 +7720,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 5
-=======
   m_RootOrder: 3
->>>>>>> Parallax-Background
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1148890725
 PrefabInstance:
@@ -12976,11 +12885,7 @@ RectTransform:
   - {fileID: 1792096433}
   - {fileID: 435470571}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 4
-=======
   m_RootOrder: 2
->>>>>>> Parallax-Background
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
