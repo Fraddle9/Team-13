@@ -14,6 +14,7 @@ public class characterController2 : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private Animator anim;
+    [SerializeField] GameObject _camera;
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class characterController2 : MonoBehaviour
 
     private void Update()
     {
+        //Yürüme animasyonu icin
         if (grounded == true && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             if (Input.GetKey(KeyCode.A))
@@ -68,6 +70,7 @@ public class characterController2 : MonoBehaviour
             anim.SetFloat("speed", 0.0f);
         }
 
+        //Zýplama animasyonu icin
         if (grounded == true && Input.GetKey(KeyCode.W))
         {
             jump = true;
@@ -77,8 +80,15 @@ public class characterController2 : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        //Kamera karakterimizi takip etsin.
+        _camera.transform.position = new Vector3(transform.position.x + 2.5f, transform.position.y + 2.0f, transform.position.z - 1.0f);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Karakterimiz zemine temas ettiðinde çalýþýr.
         if (collision.gameObject.CompareTag("Zemin"))
         {
             anim.SetBool("grounded", true);
