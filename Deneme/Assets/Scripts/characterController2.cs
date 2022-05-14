@@ -10,7 +10,7 @@ public class characterController2 : MonoBehaviour
 
     private bool jump;
     private bool grounded = true;
-    private bool moving;
+    //private bool moving;
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private Animator anim;
@@ -29,14 +29,6 @@ public class characterController2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_rigidbody2D.velocity != Vector2.zero)
-        {
-            moving = true;
-        }
-        else
-        {
-            moving = false;
-        }
         _rigidbody2D.velocity = new Vector2(speed * moveDirection, _rigidbody2D.velocity.y);
 
         if (jump == true)
