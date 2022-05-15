@@ -48,6 +48,9 @@ TagManager:
   - name: Midground
     uniqueID: 1987829801
     locked: 0
+  - name: Collectibles
+    uniqueID: 3132865183
+    locked: 0
   - name: Foreground
     uniqueID: 3386128105
     locked: 0
