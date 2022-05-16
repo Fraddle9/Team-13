@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Camera
+    [SerializeField] GameObject _camera;
     //Movement
     [Header("Movement")]
     public float runSpeed;
@@ -66,6 +68,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         //Jump();
+        _camera.transform.position = new Vector3(transform.position.x + 2.0f, transform.position.y + 2.5f, transform.position.z - 1.0f);
     }
     void CheckState()
     {
