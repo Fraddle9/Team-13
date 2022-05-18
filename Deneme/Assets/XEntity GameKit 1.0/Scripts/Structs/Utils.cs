@@ -112,21 +112,21 @@ namespace XEntity
         {
             Vector3 targetSize = Vector3.one * 0.5f;
             GameObject inst = GameObject.Instantiate(item.prefab, position, Quaternion.identity);
-            float maxSizeComponent = MaxVec3Component(inst.GetComponent<MeshRenderer>().bounds.size);
+            //float maxSizeComponent = MaxVec3Component(inst.GetComponent<MeshRenderer>().bounds.size);
 
-            inst.transform.localScale = inst.transform.localScale * (MaxVec3Component(targetSize) / maxSizeComponent);
+            //inst.transform.localScale = inst.transform.localScale * (MaxVec3Component(targetSize) / maxSizeComponent);
 
             var interactable = inst.GetComponent<Interactable>();
             if (interactable != null) GameObject.Destroy(interactable);
 
-            inst.GetComponent<Collider>().isTrigger = true;
+            inst.GetComponent<Collider2D>().isTrigger = true;
             inst.AddComponent<ItemCollector>().Create(item);
         }
 
         //Returns the maximum of the three components of the passed in Vector3.
         public static float MaxVec3Component(Vector3 vec) 
         {
-            return Mathf.Max(Mathf.Max(vec.x, vec.y), vec.z);
+            return Mathf.Max(Mathf.Max(vec.x, vec.y), 0);
         }
 
         /*
