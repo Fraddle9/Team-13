@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     public int attackDamage = 10;
     public LayerMask enemyLayers;
     private bool isAttacking;
+    private PlayerManager playerManager;
     [HideInInspector] public bool dead = false;
     [HideInInspector] public bool isCombo = false;
 
@@ -45,21 +46,27 @@ public class PlayerController : MonoBehaviour
     const string jump = "PlayerJump";
     const string fall = "PlayerFall";
 
+    [SerializeField]
+    GameObject Kitap, PanelOptions,PanelDialogue;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        playerManager = GetComponent<PlayerManager>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        CheckState();
-        CheckInputs();
-        CheckAttack();
-        ChangeAnimations();
-        FlipPlayer();
+    {     
+            CheckState();
+            CheckInputs();
+            CheckAttack();
+            ChangeAnimations();
+            FlipPlayer(); 
     }
 
     void FixedUpdate()
@@ -189,15 +196,18 @@ public class PlayerController : MonoBehaviour
         attackTime += Time.deltaTime;
         if (attackTime > 0.6f)
             isCombo = false;
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (isGrounded)
-                if (isCombo && attackTime > 0.3f)
-                    Attack();
-                else if (!isCombo)
-                    Attack();
-        }
+     
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (isGrounded)
+                    if (isCombo && attackTime > 0.3f)
+                        Attack();
+                    else if (!isCombo)
+                        Attack();
+            }
+                        
     }
+
     void Attack()
     {
         isAttacking = true;
@@ -211,7 +221,26 @@ public class PlayerController : MonoBehaviour
             attackCount = 1;
             attackDamage = 20;
         }
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            
+            if (enemy.CompareTag("Sword"))
+                enemy.GetComponent<Sword_Behaviour>().TakeDamage(attackDamage);
+            
+        }
         attackTime = 0f;
+    }
+
+    private bool UIOpen()
+    {
+
+        if (Kitap.activeSelf || PanelDialogue.activeSelf || PanelOptions.activeSelf)
+        {
+            return true;
+        }
+        else return false;
     }
 
     private void OnDrawGizmosSelected()

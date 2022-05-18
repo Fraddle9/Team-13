@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2964835132538316029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.084, y: -0.009, z: 0}
+  m_LocalPosition: {x: 0.16, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7781381410289079532}
@@ -74,9 +74,10 @@ GameObject:
   - component: {fileID: 7781381410289079535}
   - component: {fileID: 7781381410289079528}
   - component: {fileID: 1655534653}
+  - component: {fileID: 614616313}
   m_Layer: 0
   m_Name: Woodcutter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +203,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.028103888, y: 0.010027796}
-  m_Size: {x: 0.24137723, y: 0.34528798}
+  m_Size: {x: 0.21, y: 0.34528798}
   m_Direction: 0
 --- !u!114 &1655534653
 MonoBehaviour:
@@ -229,10 +230,33 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 8875523296421663921}
-  attackRange: 0.5
-  attackDamage: 10
+  attackRange: 0.9
+  attackDamage: 20
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
   dead: 0
   isCombo: 0
+--- !u!114 &614616313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781381410289079529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91b464c515a36a448bca78d9fa19ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckPoint: {fileID: 0}
+  reviveEffect: {fileID: 1220232784898456290, guid: 1867e6d6b78dcd842a81be3c96488bdc, type: 3}
+  flickerSpeed: 5
+  MaxHealth: 100
+  CurrentHealth: 100
+  isHealing: 0
+  damageable: 1
+  dead: 0
+  isReviving: 0
+  status: 1
+  hitAnimRunning: 0
