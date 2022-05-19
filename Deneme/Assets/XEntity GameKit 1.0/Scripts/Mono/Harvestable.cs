@@ -20,17 +20,17 @@ namespace XEntity
 
 
         //This method is called when the HP is zero and item needs to be harvested.
-        private void Harvest(Interactor interactor) 
+        private void Harvest(Interactor interactor)
         {
             System.Random prng = new System.Random(GetHashCode());
 
             //Items dropped based on their drop chance. 
-            for (int i = 0; i < harvestDrops.Length; i++) 
+            for (int i = 0; i < harvestDrops.Length; i++)
             {
                 HarvestDrop drop = harvestDrops[i];
                 if (prng.NextDouble() <= drop.chance)
                     Utils.InstantiateItemCollector(drop.itemToDrop, transform.position + (transform.forward / 2));
-            }                 
+            }
 
             //Onces all the harvested items are dropped, the harvestable object is destroyed.
             StartCoroutine(Utils.TweenScaleOut(gameObject, 40, true));

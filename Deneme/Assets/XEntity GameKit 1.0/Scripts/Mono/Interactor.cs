@@ -34,38 +34,61 @@ namespace XEntity
         private void Update()
         {
             HandleInteractions();
+
         }
 
         //This method draws gizmos in the editor.
-        private void OnDrawGizmos() 
+        private void OnDrawGizmos()
         {
-            if (drawRangeIndicator) 
+            if (drawRangeIndicator)
             {
                 Gizmos.DrawWireSphere(transform.position, interactionRange);
             }
         }
 
+        //public void OnTriggerEnter2D(Collider2D collision)
+        //{
+        //    public void callCollision() {
+        //        Debug.Log("Inside OT2D");
+        //        Interactable interactable = collision.GetComponent<Interactable>();
+        //        if (interactable != null)
+        //        {
+        //            Debug.Log("Interactable");
+        //        }
+        //    }
+        //}
+
         //This method handles the interactable object detection, interaction trigger and the interaction event callbacks.
+
         private void HandleInteractions()
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position))
+            if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true)
             {
+                Debug.Log("IN Raycast and Inrange");
+                //Debug.Log("transform position " + transform.position);
+                //Debug.Log("Inrange " + InRange(transform.position));
+                //Debug.Log("Inrange (hit)" + InRange(hit.transform.position));
+                //Debug.Log("GetComponent " + hit.transform.GetComponent<Interactable>());
+                //Debug.Log("ray " + ray);
+                //Debug.Log(hit);
+                //Debug.Log("Raycast " + Physics.Raycast(ray, out hit));
+
                 Interactable target = hit.transform.GetComponent<Interactable>();
                 if (target != null)
                 {
                     interactionTarget = target;
                 }
-                else interactionTarget = null;
+
             }
             else
             {
-                interactionTarget = null;
+
             }
 
-            if (Input.GetMouseButtonDown(0)) InitInteraction();
+            if (Input.GetKeyDown(KeyCode.F)) InitInteraction();
         }
 
         //This returns true if the target position is within the interaction range.
@@ -75,17 +98,19 @@ namespace XEntity
         }
 
         //This method initilizes an interaction with this interactor if a valid interactabale target exists.
-        private void InitInteraction() 
+        private void InitInteraction()
         {
             if (interactionTarget == null) return;
+            Debug.Log("InitInteraction");
             interactionTarget.OnInteract(this);
         }
 
         //This method adds items to the inventory of this interactor and if applicable destroys the physical instance of the item.
         public void AddToInventory(Item item, GameObject instance)
         {
-            if (inventory.AddItem(item)) 
-                if(instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
+            if (inventory.AddItem(item))
+                if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
+            Debug.Log("AddtoInventory: item " + item + " instance " + instance);
         }
     }
 }

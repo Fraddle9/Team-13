@@ -130,18 +130,18 @@ namespace XEntity
         }
 
         //This is the listener for the itemUseButton click event.
-        private void OnItemUseClicked(ItemSlot slot) 
+        private void OnItemUseClicked(ItemSlot slot)
         {
             ItemManager.Instance.UseItem(slot);
         }
 
         //Below is the code for saving/loading/deleting container data using JSON utility.
-    #region Saving & Loading Data
+        #region Saving & Loading Data
 
         //This method saves the container data on an unique file path that is aquired based on the passed in id.
         //This id should be unique for different saves.
         //If a save already exists with the id, the data will be overwritten.
-        public void SaveData(string id) 
+        public void SaveData(string id)
         {
             //An unique file path is aquired here based on the passed in id. 
             string dataPath = GetIDPath(id);
@@ -149,14 +149,14 @@ namespace XEntity
             if (System.IO.File.Exists(dataPath))
             {
                 System.IO.File.Delete(dataPath);
-                Debug.Log("Exisiting data with id: " + id +"  is overwritten.");
+                Debug.Log("Exisiting data with id: " + id + "  is overwritten.");
             }
 
-            try 
+            try
             {
                 Transform slotHolder = containerUI.Find("Slot Holder");
                 SlotInfo info = new SlotInfo();
-                for (int i = 0; i < slotHolder.childCount; i++) 
+                for (int i = 0; i < slotHolder.childCount; i++)
                 {
                     ItemSlot slot = slotHolder.GetChild(i).GetComponent<ItemSlot>();
                     if (!slot.IsEmpty)
@@ -167,8 +167,8 @@ namespace XEntity
                 string jsonData = JsonUtility.ToJson(info);
                 System.IO.File.WriteAllText(dataPath, jsonData);
                 Debug.Log("<color=green>Data succesfully saved! </color>");
-            } 
-            catch 
+            }
+            catch
             {
                 Debug.LogError("Could not save container data! Make sure you have entered a valid id and all the item scriptable objects are added to the ItemManager item list");
             }
@@ -176,17 +176,17 @@ namespace XEntity
 
         //Loads container data saved with the passed in id.
         //NOTE: A save file must exist first with the id in order for it to be loaded.
-        public void LoadData(string id) 
+        public void LoadData(string id)
         {
             string dataPath = GetIDPath(id);
 
-            if (!System.IO.File.Exists(dataPath)) 
+            if (!System.IO.File.Exists(dataPath))
             {
                 Debug.LogWarning("No saved data exists for the provided id: " + id);
                 return;
             }
 
-            try 
+            try
             {
                 string jsonData = System.IO.File.ReadAllText(dataPath);
                 SlotInfo info = JsonUtility.FromJson<SlotInfo>(jsonData);
@@ -206,7 +206,7 @@ namespace XEntity
         }
 
         //Deletes the save with the passed in id, if one exists.
-        public void DeleteData(string id) 
+        public void DeleteData(string id)
         {
             string path = GetIDPath(id);
             if (System.IO.File.Exists(path))
@@ -217,7 +217,7 @@ namespace XEntity
         }
 
         //Returns a unique path based on the id.
-        protected virtual string GetIDPath(string id) 
+        protected virtual string GetIDPath(string id)
         {
             return Application.persistentDataPath + $"/{id}.dat";
         }
@@ -229,20 +229,20 @@ namespace XEntity
             public List<int> itemIndexs;
             public List<int> itemCounts;
 
-            public SlotInfo() 
+            public SlotInfo()
             {
                 slotIndexs = new List<int>();
                 itemIndexs = new List<int>();
                 itemCounts = new List<int>();
             }
 
-            public void AddInfo(int slotInex, int itemIndex, int itemCount) 
+            public void AddInfo(int slotInex, int itemIndex, int itemCount)
             {
                 slotIndexs.Add(slotInex);
                 itemIndexs.Add(itemIndex);
                 itemCounts.Add(itemCount);
             }
-            
+
         }
         #endregion
     }

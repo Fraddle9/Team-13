@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Tablet
   itemPerSlot: 15
   icon: {fileID: 21300000, guid: 37b5d89eb182027459001ed87bfaa084, type: 3}
-  prefab: {fileID: 5479481191441077360, guid: f2974bb2b17e9064cad44805c0222288, type: 3}
+  prefab: {fileID: 2065547780005799110, guid: 0216feb25d0ffe14ea0fe35e8d5e8fbe, type: 3}

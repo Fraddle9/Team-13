@@ -44,11 +44,11 @@ namespace XEntity
         }
 
         //This method attempts to transfer the passed in amount of items from the trigger ItemSlot to the target ItemSlot.
-        public static void TransferItemQuantity(ItemSlot trigger, ItemSlot target, int amount) 
+        public static void TransferItemQuantity(ItemSlot trigger, ItemSlot target, int amount)
         {
-            if (!trigger.IsEmpty) 
+            if (!trigger.IsEmpty)
             {
-                for (int i = 0; i < amount; i++) 
+                for (int i = 0; i < amount; i++)
                 {
                     if (!trigger.IsEmpty)
                     {
@@ -65,14 +65,14 @@ namespace XEntity
          * NOTE: This must be called from a MonoBehaviour script and must be called with StartCoroutine().
          * For example: StartCoroutine(GameUtility.TweenScaleIn(exampleGameObject, 40, Vector3.one));
         */
-        public static IEnumerator TweenScaleIn(GameObject obj, float durationInFrames, Vector3 maxScale) 
+        public static IEnumerator TweenScaleIn(GameObject obj, float durationInFrames, Vector3 maxScale)
         {
             Transform tf = obj.transform;
             tf.localScale = Vector3.zero;
             tf.gameObject.SetActive(true);
 
             float frame = 0;
-            while (frame < durationInFrames) 
+            while (frame < durationInFrames)
             {
                 tf.localScale = Vector3.Lerp(Vector3.zero, maxScale, frame / durationInFrames);
                 frame++;
@@ -108,32 +108,32 @@ namespace XEntity
 
         //Instantiates an item collector object with the passed in item at the passed in position.
         //An example is when an item is removed from the inventory, an item collector with the removed item is dropped in front of the player.
-        public static void InstantiateItemCollector(Item item, Vector3 position) 
+        public static void InstantiateItemCollector(Item item, Vector3 position)
         {
             Vector3 targetSize = Vector3.one * 0.5f;
             GameObject inst = GameObject.Instantiate(item.prefab, position, Quaternion.identity);
-            float maxSizeComponent = MaxVec3Component(inst.GetComponent<MeshRenderer>().bounds.size);
+            //float maxSizeComponent = MaxVec3Component(inst.GetComponent<MeshRenderer>().bounds.size);
 
-            inst.transform.localScale = inst.transform.localScale * (MaxVec3Component(targetSize) / maxSizeComponent);
+            //inst.transform.localScale = inst.transform.localScale * (MaxVec3Component(targetSize) / maxSizeComponent);
 
             var interactable = inst.GetComponent<Interactable>();
             if (interactable != null) GameObject.Destroy(interactable);
 
-            inst.GetComponent<Collider>().isTrigger = true;
+            inst.GetComponent<Collider2D>().isTrigger = true;
             inst.AddComponent<ItemCollector>().Create(item);
         }
 
         //Returns the maximum of the three components of the passed in Vector3.
-        public static float MaxVec3Component(Vector3 vec) 
+        public static float MaxVec3Component(Vector3 vec)
         {
-            return Mathf.Max(Mathf.Max(vec.x, vec.y), vec.z);
+            return Mathf.Max(Mathf.Max(vec.x, vec.y), 0);
         }
 
         /*
          * Highlights the passed in obj with the passed in highlightColor.
          * NOTE: The object must have a mesh renderer with a valid material in order to be highlighted.
          */
-        public static void HighlightObject(GameObject obj, Color highlightColor) 
+        public static void HighlightObject(GameObject obj, Color highlightColor)
         {
             obj.GetComponent<MeshRenderer>().material.color = highlightColor;
         }
@@ -143,7 +143,7 @@ namespace XEntity
          * Unhighlights the passed in obj by setting the color to the original color.
          * NOTE: The object must have a mesh renderer with a valid material in order to be unhighlited.
          */
-        public static void UnhighlightObject(GameObject obj, Color original) 
+        public static void UnhighlightObject(GameObject obj, Color original)
         {
             obj.GetComponent<MeshRenderer>().material.color = original;
         }
