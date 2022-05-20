@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   itemName: Apple
-  itemPerSlot: 3
+  itemPerSlot: 10
   icon: {fileID: 21300000, guid: 7aca5b7b2cbcf824ab85ca04bc5070fe, type: 3}
   prefab: {fileID: 7289254030745872746, guid: 26d3c5ce846b4024bbb15293cfae30de, type: 3}

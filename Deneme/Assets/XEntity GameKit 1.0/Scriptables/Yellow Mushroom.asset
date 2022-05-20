@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   itemName: Yellow Mushroom
-  itemPerSlot: 5
+  itemPerSlot: 100
   icon: {fileID: 21300000, guid: b1e349baf1733ac478e433f7bb949de3, type: 3}
   prefab: {fileID: 8657910923137107997, guid: ec5d91232451fb14980c7c04fe64c697, type: 3}

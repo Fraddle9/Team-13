@@ -12,6 +12,7 @@ public class Sword_Behaviour : MonoBehaviour
     [HideInInspector] public bool inRange;
     public GameObject hotZone;
     public GameObject triggerArea;
+    public GameObject itemToDrop;
 
     public Transform leftLimit;
     public Transform rightLimit;
@@ -49,6 +50,7 @@ public class Sword_Behaviour : MonoBehaviour
     }
     void Start()
     {
+        
         currentHealth = maxHealth;
         PlayerPosition = GameObject.FindGameObjectWithTag("Player").transform;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -219,7 +221,9 @@ public class Sword_Behaviour : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         anim.Play("Enemy_dead");
-        Invoke("Eliminate", 1.5f);     
+        Invoke("Eliminate", 1.5f);
+        Instantiate(itemToDrop, transform.position, Quaternion.identity);
+
     }
     private void Eliminate()
     {
