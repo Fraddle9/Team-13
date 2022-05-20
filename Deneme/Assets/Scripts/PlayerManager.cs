@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-
+    public HealthBarScript healthBar;
     //[HideInInspector] public GameObject currentCheckPoint;
     private PlayerController player;
     private Rigidbody2D rb;
@@ -44,6 +44,7 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         CurrentHealth = MaxHealth;
+        healthBar.SetMaxHealth(MaxHealth);
         player = GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -77,6 +78,7 @@ public class PlayerManager : MonoBehaviour
                     //normal damage status
                     case 1:
                         CurrentHealth -= damage;
+                        healthBar.SetHealth(CurrentHealth);
                         player.ChangeAnimationState(hit);
                         hitAnimRunning = true;
                         Invoke("CancelHitState", .33f);

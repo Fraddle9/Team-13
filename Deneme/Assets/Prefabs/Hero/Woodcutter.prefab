@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 7781381410289079528}
   - component: {fileID: 1655534653}
   - component: {fileID: 614616313}
+  - component: {fileID: 1554081342}
   m_Layer: 0
   m_Name: Woodcutter
   m_TagString: Player
@@ -136,8 +137,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -908839191
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayer: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3849791415587609186, guid: e2f9a214cb81c9049af1518acdc2cbc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -238,6 +239,9 @@ MonoBehaviour:
     m_Bits: 128
   dead: 0
   isCombo: 0
+  Kitap: {fileID: 0}
+  PanelOptions: {fileID: 0}
+  PanelDialogue: {fileID: 0}
 --- !u!114 &614616313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,14 +254,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91b464c515a36a448bca78d9fa19ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCheckPoint: {fileID: 0}
+  healthBar: {fileID: 0}
   reviveEffect: {fileID: 1220232784898456290, guid: 1867e6d6b78dcd842a81be3c96488bdc, type: 3}
   flickerSpeed: 5
   MaxHealth: 100
   CurrentHealth: 100
-  isHealing: 0
   damageable: 1
   dead: 0
   isReviving: 0
   status: 1
   hitAnimRunning: 0
+--- !u!114 &1554081342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781381410289079529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95cc55de8bd0414298605e880f3b734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 2
+  mainCamera: {fileID: 0}
+  inventory: {fileID: 0}
+  drawRangeIndicator: 1
