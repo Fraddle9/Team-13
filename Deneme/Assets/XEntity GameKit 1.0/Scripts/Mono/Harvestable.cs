@@ -35,6 +35,12 @@ namespace XEntity
             //Onces all the harvested items are dropped, the harvestable object is destroyed.
             StartCoroutine(Utils.TweenScaleOut(gameObject, 40, true));
         }
+
+        //private bool IsGrounded()
+        //{
+        //    Debug.Log(transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded);
+        //    return transform.Find("GroundCheck").GetComponent<GroundCheck>().isGrounded;
+        //}
     }
 
 
