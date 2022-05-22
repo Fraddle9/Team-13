@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayers;
     private bool isAttacking;
     private PlayerManager playerManager;
+    [HideInInspector] public bool inCheckpointRange;
     [HideInInspector] public bool dead = false;
     [HideInInspector] public bool isCombo = false;
 
