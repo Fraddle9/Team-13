@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Zemin
+  - Limit
+  - Sword
+  - Bitcoin
   layers:
   - Default
   - TransparentFX

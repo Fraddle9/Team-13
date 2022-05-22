@@ -93,7 +93,7 @@ namespace XEntity
         }
 
         //Updates the UI toggle state.
-        private void ToggleUI()
+        public void ToggleUI()
         {
             slotOptionsUI.SetActive(false);
 
