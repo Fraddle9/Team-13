@@ -98,7 +98,8 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 - **Sprint içinde tamamlanması tahmin edilen puan**: 200 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint daha çok işlenecek konunun orturtulması ve denemelere başlanılması olarak planlanıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
-  - [1.SPRİNTDONE](https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing)
+  - [2.SPRINT BACKLOG LIST]([https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing](https://docs.google.com/document/d/1BxEBnJn31DokSAnZtARMrahgjmMFBFvuvYxcBn3UHJc/edit#heading=h.lfnnqlbxlyqh)
+- [2.SPRINT VISUAL]([https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing](https://docs.google.com/document/d/1BxEBnJn31DokSAnZtARMrahgjmMFBFvuvYxcBn3UHJc/edit#heading=h.lfnnqlbxlyqh)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
 
@@ -112,9 +113,9 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 ![trello çalışma alanı 3](https://user-images.githubusercontent.com/93331083/169861662-d9faddf3-4294-4f9e-a3e4-8482f41d9413.png)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://user-images.githubusercontent.com/93331083/167448451-ae454eea-46f0-4ea6-be51-3f94892bdd38.jpeg)
-  ![Screenshot 2](https://user-images.githubusercontent.com/93331083/167448467-f4f15c63-94d0-4741-8cb1-a6187a510429.jpeg)
-  ![Screenshot 3](https://user-images.githubusercontent.com/93331083/167426161-d7c026da-c528-4e96-8763-7f5e1593c7f3.png)
+  ![Screenshot 1]([https://user-images.githubusercontent.com/93331083/167448451-ae454eea-46f0-4ea6-be51-3f94892bdd38.jpeg](https://drive.google.com/file/d/1qt72q6DM25iAzEHZ6dceGzyzsR6fesO-/view?usp=sharing)
+  ![Screenshot 2](https://drive.google.com/file/d/1Q7GvGJ0vXJ-0Zpy4VVDi2xRXKNWhVmKG/view?usp=sharing)
+  ![Screenshot 3](https://drive.google.com/file/d/1tfyh6B4LX7O0Ty20od2re38cKp9FZDjm/view?usp=sharing)
   ![Screenshot 4](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
 
 - **Sprint Review**: 
