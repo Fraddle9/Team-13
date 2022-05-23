@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace XEntity
 {
@@ -27,7 +29,9 @@ namespace XEntity
         //The interactable objects must have a mesh renderer with a valid material in order to be highlighted.
 
         private ItemSlot[] slots;
+        string itemname;
 
+        List<string> HaveItems = new List<string>();
 
         //This is the position at which dropped items will be instantiated (in front of this interactor).
         public Vector3 ItemDropPosition { get { return transform.position + transform.forward; } }
@@ -73,29 +77,45 @@ namespace XEntity
 
             if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true)
             {
-                //Debug.Log("IN Raycast and Inrange");
-                //Debug.Log("transform position " + transform.position);
-                //Debug.Log("Inrange " + InRange(transform.position));
-                //Debug.Log("Inrange (hit)" + InRange(hit.transform.position));
-                //Debug.Log("GetComponent " + hit.transform.GetComponent<Interactable>());
-                //Debug.Log("ray " + ray);
-                //Debug.Log(hit);
-                //Debug.Log("Raycast " + Physics.Raycast(ray, out hit));
-                //Debug.Log(ItemManager.Instance.itemList.Count);
+                //string temp;
                 Interactable target = hit.transform.GetComponent<Interactable>();
-                //Debug.Log("item = " + item);
-                Debug.Log("slots[0] = " + ItemContainer.Instance.slots[0].slotItem);
-                //Debug.Log(ItemContainer.Instance.ContainsItem(item));
-                if (target.name == "Chest" && ItemContainer.Instance.slots[0].slotItem.name == "Tablet")
+                //Debug.Log(ItemContainer.Instance.slots[i]);
+                //for (int i = 0; i < 20; i++)
+                //{
+                    //string temp = ("" + inventory.slots[i].slotItem);
+
+                    //Debug.Log(ItemContainer.Instance.slots[i]);
+                    ////Debug.Log("Tablet");
+                    //if (ItemContainer.Instance.slots[i].CompareTag("Key"))
+                    //{
+                    //    Debug.Log("Key");
+                    //}
+                    //else continue;
+
+                    //if (ItemContainer.Instance.slots[i].slotItem.itemPerSlot == 10)
+                    //{
+                    //    Debug.Log("HolyWater");
+                    //}
+                    //else continue;
+                //}
+
+                //temp = ItemContainer.Instance.slots[0].slotItem.name;
+                //Debug.Log("slots = " + ItemContainer.Instance.slots[0].slotItem);
+                //Debug.Log("temp = " + temp);
+
+                if (target.tag == "Chest" && target != null && hit.transform.GetComponent<Interactable>()) //&& ItemContainer.Instance.slots[0].slotItem.name == "Tablet"
                 {
-                   
-
-
-                    //Debug.Log(ItemManager.Instance.GetItemByName("Tablet"));
-                    Debug.Log("name is chest and 0 index is tablet");
+                    Debug.Log("name is chest");
+                    if (HaveItems.Contains("Tablet"))
+                    {
+                        
+                        Debug.Log("List contains = Tablet");
+                        interactionTarget = target;
+                        //Debug.Log(HaveItems);
+                    }
                 }
 
-                if (target != null)
+                if (target != null && target.tag != "Chest")
                 {
                     interactionTarget = target;
                     //Debug.Log(target.name);
@@ -135,6 +155,8 @@ namespace XEntity
         {
             if (inventory.AddItem(item))
                 if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
+            HaveItems.Add(item.name);
+            HaveItems = HaveItems.Distinct().ToList();
             //Debug.Log("AddtoInventory: item " + item + " instance " + instance);
         }
     }

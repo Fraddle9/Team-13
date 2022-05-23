@@ -8,6 +8,9 @@ TagManager:
   - Limit
   - Sword
   - Bitcoin
+  - Harvestable
+  - Key
+  - Chest
   layers:
   - Default
   - TransparentFX

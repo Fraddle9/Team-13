@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1876625990924397960}
   m_Layer: 0
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,5 +111,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 0
   harvestDrops:
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
+  - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+    chance: 1
   - itemToDrop: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
     chance: 1

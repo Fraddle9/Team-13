@@ -46,7 +46,7 @@ namespace XEntity
         {
             //Check for the toggle key and update the toggle state.
             if (Input.GetKeyDown(UIToggleKey)) ToggleUI();
-            // if slots[0].slotItem = Tablet && if slot[0].
+            
 
            // Debug.Log(slots[0].slotItem);
             
