@@ -26,6 +26,8 @@ namespace XEntity
         //This is the color target interactable objects are highlighted.
         //The interactable objects must have a mesh renderer with a valid material in order to be highlighted.
 
+        private ItemSlot[] slots;
+
 
         //This is the position at which dropped items will be instantiated (in front of this interactor).
         public Vector3 ItemDropPosition { get { return transform.position + transform.forward; } }
@@ -65,9 +67,13 @@ namespace XEntity
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
+
+            
+            
+
             if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true)
             {
-                Debug.Log("IN Raycast and Inrange");
+                //Debug.Log("IN Raycast and Inrange");
                 //Debug.Log("transform position " + transform.position);
                 //Debug.Log("Inrange " + InRange(transform.position));
                 //Debug.Log("Inrange (hit)" + InRange(hit.transform.position));
@@ -75,19 +81,38 @@ namespace XEntity
                 //Debug.Log("ray " + ray);
                 //Debug.Log(hit);
                 //Debug.Log("Raycast " + Physics.Raycast(ray, out hit));
-
+                //Debug.Log(ItemManager.Instance.itemList.Count);
                 Interactable target = hit.transform.GetComponent<Interactable>();
+                //Debug.Log("item = " + item);
+                Debug.Log("slots[0] = " + ItemContainer.Instance.slots[0].slotItem);
+                //Debug.Log(ItemContainer.Instance.ContainsItem(item));
+                if (target.name == "Chest" && ItemContainer.Instance.slots[0].slotItem.name == "Tablet")
+                {
+                   
+
+
+                    //Debug.Log(ItemManager.Instance.GetItemByName("Tablet"));
+                    Debug.Log("name is chest and 0 index is tablet");
+                }
+
                 if (target != null)
                 {
                     interactionTarget = target;
+                    //Debug.Log(target.name);
                 }
+
+                //else if (target != null)
+                //{
+                //    interactionTarget = target;
+                //    //Debug.Log(target.name);
+                //}
 
             }
             else
             {
 
             }
-
+            
             if (Input.GetKeyDown(KeyCode.F)) InitInteraction();
         }
 
@@ -101,7 +126,7 @@ namespace XEntity
         private void InitInteraction()
         {
             if (interactionTarget == null) return;
-            Debug.Log("InitInteraction");
+            //Debug.Log("InitInteraction");
             interactionTarget.OnInteract(this);
         }
 
@@ -110,7 +135,7 @@ namespace XEntity
         {
             if (inventory.AddItem(item))
                 if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
-            Debug.Log("AddtoInventory: item " + item + " instance " + instance);
+            //Debug.Log("AddtoInventory: item " + item + " instance " + instance);
         }
     }
 }

@@ -13,12 +13,14 @@ namespace XEntity
         //When this key is pressed the UI for the item container is toggled on/off.
         public KeyCode UIToggleKey = KeyCode.I;
 
+
+        public static ItemContainer Instance;
         //If this is true, when items are removed from this container, they will be dropped in front of the container.
         [Tooltip("If true when items are removed the corresponding prefab will be instantiated in the scene near the carrier")]
         public bool dropRemovedItemPrefabs = true;
 
         //The array of slots this container holds. The slots are assigned through code based on the number of children the slot holder Transform contains.
-        private ItemSlot[] slots;
+        public ItemSlot[] slots;
 
         //The UI of the container, a containerUI template prefab is provided with this asset. All container UI mus tbe set up exactly in that same way.
         //To modify the number of slots, modifiy the number of children the slot holder inside the containerUI has.
@@ -32,16 +34,22 @@ namespace XEntity
         //the button for Remove Item.
         private Button itemRemoveButton;
 
+        //public Item itemcs;
         protected virtual void Awake()
         {
             //The container is initilized on awake.
             InitContainer();
+            Instance = this;
         }
 
         protected virtual void Update()
         {
             //Check for the toggle key and update the toggle state.
             if (Input.GetKeyDown(UIToggleKey)) ToggleUI();
+            // if slots[0].slotItem = Tablet && if slot[0].
+
+           // Debug.Log(slots[0].slotItem);
+            
         }
 
         //All the container variables are assigned here based on the container.
