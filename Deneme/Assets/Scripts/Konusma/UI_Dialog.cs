@@ -13,13 +13,14 @@ public class UI_Dialog : MonoBehaviour
     {
         mesajText = transform.Find("Dialog").Find("mesajText").GetComponent<TextMeshProUGUI>();
 
-        transform.Find("Dialog").GetComponent<Button>().onClick.AddListener(Baslangic);
-
+        //transform.Find("Dialog").GetComponent<Button>().onClick.AddListener(Baslangic);
     }
 
     private void Start()
     {
         //TextWriter.AddWriter_Static(mesajText, "Ne bakýyorsun çocuðum kazsana", 0.1f, true);
+        TextWriter.AddWriter_Static(mesajText, "O dersi neden alttan aldýðýn þimdi anlaþýlýyor..Cahil çocuðum.. E hadi biraz zorla da çevir þunu!", .05f, true, true);
+        
     }
 
     void Baslangic()
