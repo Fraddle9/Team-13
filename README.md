@@ -90,7 +90,8 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 - 
 ---
 
-# Sprint 2
+# ![Sprint 2](https://user-images.githubusercontent.com/93331083/169910463-d9fe2415-f01f-43b3-8cac-36aa32dfba14.jpeg)
+
 
 - **Sprint Notları**: 
   - [2.Sprint Toplantı Notları](https://docs.google.com/document/d/19sjQD1XaJiKKl11TH2XOSaJ3LHAc8JuRtXwWr-HmPJY/edit?usp=sharing)
