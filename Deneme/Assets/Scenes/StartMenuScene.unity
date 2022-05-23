@@ -747,6 +747,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Ayarlar
       objectReference: {fileID: 0}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2055614902722201937, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
     - target: {fileID: 6379458250485251718, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -880,6 +888,14 @@ PrefabInstance:
       propertyPath: m_text
       value: "\xC7\u0131k\u0131\u015F"
       objectReference: {fileID: 0}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2055614902722201937, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
     - target: {fileID: 7095407498487888623, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1805,8 +1821,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'No Name '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
+  m_sharedMaterial: {fileID: 2055614902722201937, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2744,6 +2760,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Devam Et
       objectReference: {fileID: 0}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2055614902722201937, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
     - target: {fileID: 7095407498487888623, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5024,6 +5048,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Yeni Oyun
       objectReference: {fileID: 0}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
+    - target: {fileID: 1990253616719101143, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2055614902722201937, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
     - target: {fileID: 4058932374093129425, guid: 265cb4e2f513f634b8fde6ab6fc95394, type: 3}
       propertyPath: m_Text
       value: Yeni Oyun

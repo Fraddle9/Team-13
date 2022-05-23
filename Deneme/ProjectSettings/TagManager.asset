@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Zemin
+  - Limit
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: Collectibles
     uniqueID: 3132865183
+    locked: 0
+  - name: Dialog
+    uniqueID: 411064547
     locked: 0
