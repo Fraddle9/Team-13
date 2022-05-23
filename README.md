@@ -1,4 +1,4 @@
-![Team-13_Logo](![team2-100](https://user-images.githubusercontent.com/104396833/169887346-e5034765-67ef-49e2-9498-1ee330247e48.jpg)
+![team2-100](https://user-images.githubusercontent.com/104396833/169887346-e5034765-67ef-49e2-9498-1ee330247e48.jpg)
 
 # Team-13
 
