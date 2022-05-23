@@ -98,8 +98,8 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 - **Sprint içinde tamamlanması tahmin edilen puan**: 200 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint daha çok işlenecek konunun orturtulması ve denemelere başlanılması olarak planlanıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
-  - [2.SPRINT BACKLOG LIST] (https://docs.google.com/document/d/1BxEBnJn31DokSAnZtARMrahgjmMFBFvuvYxcBn3UHJc/edit?usp=sharing)
-- [2.SPRINT VISUAL] (https://drive.google.com/file/d/14EOByBnloNFyP8QoG5ucOQ4kCrH-MqaT/view?usp=sharing)
+  - [2.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1BxEBnJn31DokSAnZtARMrahgjmMFBFvuvYxcBn3UHJc/edit?usp=sharing)
+  - [2.SPRINT VISUAL](https://drive.google.com/file/d/14EOByBnloNFyP8QoG5ucOQ4kCrH-MqaT/view?usp=sharing)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
 
