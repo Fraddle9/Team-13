@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: f6dcfd54b16c11d4b8202534c7b9acb3
+guid: ca430acc39c40804f83d9ab9298c1341
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8213069005142502404
-    second: Enemy-Bat-Fly-32x32_0
+      213: -5490868212970672578
+    second: Enemy-Bat-Fly2-32x32_0
   - first:
-      213: -960596298439156565
-    second: Enemy-Bat-Fly-32x32_1
+      213: 3995013484156774144
+    second: Enemy-Bat-Fly2-32x32_1
   - first:
-      213: -3779224880342886279
-    second: Enemy-Bat-Fly-32x32_2
+      213: -6408015268218131784
+    second: Enemy-Bat-Fly2-32x32_2
   - first:
-      213: 5470895010255896574
-    second: Enemy-Bat-Fly-32x32_3
+      213: 4554385132667604261
+    second: Enemy-Bat-Fly2-32x32_3
   - first:
-      213: 2528584468661238990
-    second: Enemy-Bat-Fly-32x32_4
+      213: 4422833167788941561
+    second: Enemy-Bat-Fly2-32x32_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,28 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40c2a47debeaaf170800000000000000
-      internalID: 8213069005142502404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_1
+      name: Enemy-Bat-Fly2-32x32_0
       rect:
         serializedVersion: 2
         x: 32
@@ -153,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bac9afa81c64ba2f0800000000000000
-      internalID: -960596298439156565
+      spriteID: e3e2661c3748cc3b0800000000000000
+      internalID: -5490868212970672578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_2
+      name: Enemy-Bat-Fly2-32x32_1
       rect:
         serializedVersion: 2
         x: 0
@@ -174,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97818d89efe7d8bc0800000000000000
-      internalID: -3779224880342886279
+      spriteID: 0076f0ce893217730800000000000000
+      internalID: 3995013484156774144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_3
+      name: Enemy-Bat-Fly2-32x32_2
       rect:
         serializedVersion: 2
         x: 32
@@ -195,14 +174,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff72c996068ceb40800000000000000
-      internalID: 5470895010255896574
+      spriteID: 8ba249e80182217a0800000000000000
+      internalID: -6408015268218131784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_4
+      name: Enemy-Bat-Fly2-32x32_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d09f2e52d643f30800000000000000
+      internalID: 4554385132667604261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-Bat-Fly2-32x32_4
       rect:
         serializedVersion: 2
         x: 32
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc7f1f5d26571320800000000000000
-      internalID: 2528584468661238990
+      spriteID: 9f020ea355f016d30800000000000000
+      internalID: 4422833167788941561
       vertices: []
       indices: 
       edges: []
