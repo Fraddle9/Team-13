@@ -113,10 +113,26 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 ![trello çalışma alanı 3](https://user-images.githubusercontent.com/93331083/169861662-d9faddf3-4294-4f9e-a3e4-8482f41d9413.png)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1]([https://user-images.githubusercontent.com/93331083/167448451-ae454eea-46f0-4ea6-be51-3f94892bdd38.jpeg](https://drive.google.com/file/d/1qt72q6DM25iAzEHZ6dceGzyzsR6fesO-/view?usp=sharing)
-  ![Screenshot 2](https://drive.google.com/file/d/1Q7GvGJ0vXJ-0Zpy4VVDi2xRXKNWhVmKG/view?usp=sharing)
-  ![Screenshot 3](https://drive.google.com/file/d/1tfyh6B4LX7O0Ty20od2re38cKp9FZDjm/view?usp=sharing)
-  ![Screenshot 4](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
+  ![Screenshot 1](
+
+https://user-images.githubusercontent.com/104396833/169871849-23b036d1-7dc2-423d-8f7a-aaac7ae4a50c.mp4
+
+)
+  ![Screenshot 2](
+
+https://user-images.githubusercontent.com/104396833/169871948-f067eab2-993a-4854-9dad-9acd5d538a8c.mp4
+
+)
+  ![Screenshot 3](
+
+https://user-images.githubusercontent.com/104396833/169872024-384a606a-7198-4715-948c-780f7f60cf13.mp4
+
+)
+  ![Screenshot 4](
+
+https://user-images.githubusercontent.com/104396833/169872089-2443a195-083d-4620-b1f9-65ed1ae8219d.mp4
+
+)
 
 - **Sprint Review**: 
  Alınan kararlar: Oyun stroy-driven düzeneği ile hikaye- diyalog kısmı oturtulmuştur. Bu sistem üzerinden tasarımlarda ve mekanikte alınan yol dahilinde anlaşılan kısmı ile yapım oluşturulmuştur. Karakter arkelog olarak konumlandırılmış, konuşma mekaniği ile mentör ile iletişim kurmaktadır.  Backlog ile sprint içindeki çalışma sistemi oturtulmaya çalışıldı. Görev dağılımı yapıldı. Bug'lar çözülmeye çalışıldı. İki level oyuncuya gösterilecek şekilde hikaye ve görev dağılımı kabaca yapıldı. İlk level 2. sprintte bitmesi planlanıldı.
