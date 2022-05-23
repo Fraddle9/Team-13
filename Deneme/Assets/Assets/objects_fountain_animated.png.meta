@@ -1,22 +1,34 @@
 fileFormatVersion: 2
-guid: f6dcfd54b16c11d4b8202534c7b9acb3
+guid: d0d1990b170c7274bbf325e79a97a0a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8213069005142502404
-    second: Enemy-Bat-Fly-32x32_0
+      213: 7197610744084606463
+    second: objects_fountain_animated_0
   - first:
-      213: -960596298439156565
-    second: Enemy-Bat-Fly-32x32_1
+      213: -2392538217213000596
+    second: objects_fountain_animated_1
   - first:
-      213: -3779224880342886279
-    second: Enemy-Bat-Fly-32x32_2
+      213: -609701826032469157
+    second: objects_fountain_animated_2
   - first:
-      213: 5470895010255896574
-    second: Enemy-Bat-Fly-32x32_3
+      213: 1192234265343376588
+    second: objects_fountain_animated_3
   - first:
-      213: 2528584468661238990
-    second: Enemy-Bat-Fly-32x32_4
+      213: -3005849969012944207
+    second: objects_fountain_animated_4
+  - first:
+      213: -2997183620566523261
+    second: objects_fountain_animated_5
+  - first:
+      213: -5072683685995009680
+    second: objects_fountain_animated_6
+  - first:
+      213: -1840113757913375016
+    second: objects_fountain_animated_7
+  - first:
+      213: 3556197825395915307
+    second: objects_fountain_animated_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_0
+      name: objects_fountain_animated_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 0
         width: 32
-        height: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,83 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40c2a47debeaaf170800000000000000
-      internalID: 8213069005142502404
+      spriteID: ffda2b056dc03e360800000000000000
+      internalID: 7197610744084606463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bac9afa81c64ba2f0800000000000000
-      internalID: -960596298439156565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97818d89efe7d8bc0800000000000000
-      internalID: -3779224880342886279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eff72c996068ceb40800000000000000
-      internalID: 5470895010255896574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy-Bat-Fly-32x32_4
+      name: objects_fountain_animated_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +165,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc7f1f5d26571320800000000000000
-      internalID: 2528584468661238990
+      spriteID: c64097bea2ffbced0800000000000000
+      internalID: -2392538217213000596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b7d686b67e987f0800000000000000
+      internalID: -609701826032469157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc37d26fbaab8010800000000000000
+      internalID: 1192234265343376588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b25ddcf0631946d0800000000000000
+      internalID: -3005849969012944207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3826389706dd766d0800000000000000
+      internalID: -2997183620566523261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079295650153a99b0800000000000000
+      internalID: -5072683685995009680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de9349594a9676e0800000000000000
+      internalID: -1840113757913375016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objects_fountain_animated_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a7db5a4172a5130800000000000000
+      internalID: 3556197825395915307
       vertices: []
       indices: 
       edges: []

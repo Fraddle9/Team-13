@@ -39,7 +39,7 @@ public class Sword_Behaviour : MonoBehaviour
     Transform PlayerPosition;
     #endregion
 
-    private void Awake()
+    private void Awake() 
     {
         isAvailable = true;
         SelectTarget();

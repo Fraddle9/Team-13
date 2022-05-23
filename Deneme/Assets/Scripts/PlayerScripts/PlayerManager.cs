@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public HealthBarScript healthBar;
-    //[HideInInspector] public GameObject currentCheckPoint;
+    [HideInInspector] public GameObject currentCheckPoint;
     private PlayerController player;
     private Rigidbody2D rb;
     public GameObject reviveEffect;
@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
         player = GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //currentCheckPoint = gameObject;
+        currentCheckPoint = gameObject;
     }
 
     // Update is called once per frame
@@ -147,16 +147,20 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         damageable = true;
         flickering = false;
+        healthBar.SetMaxHealth(MaxHealth);
+        // CurrentHealth = 100;
     }
 
     IEnumerator RespawnPlayer()
     {
         yield return new WaitForSeconds(1f);
         revived = false;
-        //transform.position = new Vector3(currentCheckPoint.transform.position.x + 1, transform.position.y, currentCheckPoint.transform.position.z);
+        transform.position = new Vector3(currentCheckPoint.transform.position.x + 1, transform.position.y, currentCheckPoint.transform.position.z);
         dead = false;
         //rb.simulated = true; character stays in air when he dies if these lines are active
         player.enabled = true;
+        healthBar.SetMaxHealth(MaxHealth);
+        // CurrentHealth = 100;
     }
 
 }
