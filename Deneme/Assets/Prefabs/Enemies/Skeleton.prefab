@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6180279694331737301
 Transform:
   m_ObjectHideFlags: 0
@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8109495552265371770, guid: 381432ff29fbc9f4499508ee10512184, type: 3}
+      propertyPath: itemToDrop
+      value: 
+      objectReference: {fileID: 2781725719989475252, guid: cbe5d9bb0b97356439dbb17fc87fadb8, type: 3}
     - target: {fileID: 8109495552265371770, guid: 381432ff29fbc9f4499508ee10512184, type: 3}
       propertyPath: rightLimit
       value: 

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021634140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.028, y: -0.141, z: 0}
+  m_LocalPosition: {x: 0.028, y: -1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7781381410289079532}
@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 1655534653}
   - component: {fileID: 614616313}
   - component: {fileID: 1554081342}
+  - component: {fileID: 2956826351267675943}
   m_Layer: 0
   m_Name: Woodcutter
   m_TagString: Player
@@ -164,7 +165,7 @@ Transform:
   m_GameObject: {fileID: 7781381410289079529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.52, y: -1.45, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2021634141}
   - {fileID: 8875523296421663921}
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: -908839191
   m_SortingLayer: 3
   m_SortingOrder: 10
-  m_Sprite: {fileID: -3849791415587609186, guid: e2f9a214cb81c9049af1518acdc2cbc0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 582708f90df04f04f9aa7768a3d0f06e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -276,8 +277,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028103888, y: 0.010027796}
-  m_Size: {x: 0.21, y: 0.34528798}
+  m_Offset: {x: 0.01, y: 0.010027796}
+  m_Size: {x: 1.27, y: 2.09}
   m_Direction: 0
 --- !u!114 &1655534653
 MonoBehaviour:
@@ -292,7 +293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
-  _hero: {fileID: 0}
   runSpeed: 4
   walkSpeed: 1.8
   facingRight: 1
@@ -311,6 +311,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  inCheckpointRange: 0
   dead: 0
   isCombo: 0
   Kitap: {fileID: 0}
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+  currentCheckPoint: {fileID: 0}
   reviveEffect: {fileID: 1220232784898456290, guid: 1867e6d6b78dcd842a81be3c96488bdc, type: 3}
   flickerSpeed: 5
   MaxHealth: 100
@@ -354,3 +356,16 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   inventory: {fileID: 0}
   drawRangeIndicator: 1
+--- !u!114 &2956826351267675943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781381410289079529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee854f9e35872094197e70e6669f1ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
