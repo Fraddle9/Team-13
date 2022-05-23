@@ -147,6 +147,8 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 -**Diğer Notlar**:
 - Açılış sahnesindeki animasyon zahmetli ve zaman olarak yetişmeyeceği için seslendirme desteği ile hikaye anlatımı ses ile desteklenerek anlatılabilinir.
 - [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
+- [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
+- [Çalışma Ekran Görüntüleri](https://drive.google.com/drive/u/0/folders/1QhdIp0-0MQTzu84KOdliSv7XTC2SDWDG)
 
 ---
 
