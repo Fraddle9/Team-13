@@ -95,14 +95,14 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
   - [2.Sprint Toplantı Notları](https://docs.google.com/document/d/19sjQD1XaJiKKl11TH2XOSaJ3LHAc8JuRtXwWr-HmPJY/edit?usp=sharing)
   - [2.Sprint İş Paylaşımı](https://docs.google.com/document/d/11Fa3QlriOQh_sHqcuQ-V9aF_XlqqEXkfw2nQ6FU1fYk/edit?usp=sharing)
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+- **Sprint içinde tamamlanması tahmin edilen puan**: 200 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint daha çok işlenecek konunun orturtulması ve denemelere başlanılması olarak planlanıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
   - [1.SPRİNTDONE](https://drive.google.com/file/d/1S3ed6cXSsZ3xyKuHVK-ZCHfsAVTMZUhF/view?usp=sharing)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, ikinci sprint bölümünde çoğunlukla uygulama ve uygulamanın çalışma kısmına yoğunlaşılmıştır. 
 
-Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde yer alırken aynı zamanda 1. sprintde kişilerin kendi iş kartlarında gün bazında çalışmaları yer almaktadır. Günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. 
+Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde yer alırken aynı zamanda 2. sprintde kişilerin kendi iş kartlarında gün bazında çalışmaları yer almaktadır. Günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. 
 
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack/Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örnekleri tek dosya halinde ss'lerin word dosyası halinde Readme'de tarafımızdan paylaşılmaktadır: [Daily SS](https://docs.google.com/document/d/1QMSVFKKF2v7ArW1TwGaDdsZXuZtbE443IdxrhfZqlNg/edit?usp=sharing)
 
@@ -118,14 +118,15 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
   ![Screenshot 4](https://user-images.githubusercontent.com/93331083/167426181-6835f1d7-b4de-4690-8498-28d6f7a290a4.png)
 
 - **Sprint Review**: 
- Alınan kararlar: Oyun stroy-driven düzeneği ile gidecektir. Burada zaman kısıtlaması olduğu için işin bitmesine engel olacak zor/zaman alan mekaniklerden kaçınıp oyuncu da rahatsız etmeyecek düzeyde çoğunlukla hikaye anlatımı ile devam edilmesine karar verildi. Bunun ardından oyuncu personası ile empati haritası yapılarak neler isteyebileceği ve nelerden hoşlanabileceği gibi konular üzerinden tekrar işlenen konu üzerinde mutabık kalındı. Oyuncuyu hikaye içinde daha çok eğlendirmek ve oyun süresini uzatmak için meme, caps, espriler ile desteklenmesine karar verildi. Mitolojik ve tarihi anlatının sıkıcılığını kırmak için bir mentör olması konusunda anlaşmaya gidildi. Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
+ Alınan kararlar: Oyun stroy-driven düzeneği ile hikaye- diyalog kısmı oturtulmuştur. Bu sistem üzerinden tasarımlarda ve mekanikte alınan yol dahilinde anlaşılan kısmı ile yapım oluşturulmuştur. Karakter arkelog olarak konumlandırılmış, konuşma mekaniği ile mentör ile iletişim kurmaktadır.  Backlog ile sprint içindeki çalışma sistemi oturtulmaya çalışıldı. Görev dağılımı yapıldı. Bug'lar çözülmeye çalışıldı. İki level oyuncuya gösterilecek şekilde hikaye ve görev dağılımı kabaca yapıldı. İlk level 2. sprintte bitmesi planlanıldı.
+Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
 
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla artık kişisel takvimlere uygun olarak devam etmesine karar verildi. Yazılım ve tasarım olarak ikili micro grup daha sonra bütün olarak haftalık toplantılarda çıkan ürün üzerinden tartışma yapılmasına karar kınıldı.
-  - Mekanik denemelerindeki zaman aralığının kısaltılmasına ve takvimin yoğunlaştırılmasına, hızlanmaya karar verildi.
+  - Görev dağılımı kişişel takvimlere göre ayarlanmaya çalışıldı. Yazılımda ilerleme katederken tasarımda eksiklik varsa yerine asset kullanıldı. Kısmi olarak planlar çıkarıldı. Planları çalışan kişiler ile level birleştirilecektir. Free edinilen assetler ReadMe'de paylaşılmış olup, tasarım ve diğer grup içi çalışma dosyalarına ulaşmanız için drive linkleri eklenmiştir. 
+ 
 
 -**Diğer Notlar**:
-- Tasarım için storyboard veya animatic ile olay akışının gözden geçirilmesi çıkacak işin nasıl olacağını görmek için iyi olabilir.
+- Aılış sahnesindeki animasyon zahmetli ve zaman olarak yetişmeyeceği için seslendirme desteği ile hikaye anlatımı ses ile desteklenerek anlatılabilinir.
 
 ---
 
