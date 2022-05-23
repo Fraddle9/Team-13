@@ -103,6 +103,8 @@ namespace XEntity
         public Item GetItemByName(string name) 
         {
             foreach (Item item in itemList) if (item.itemName == name) return item;
+            
+
             return null;
         }
 

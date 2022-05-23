@@ -7,6 +7,10 @@ TagManager:
   - Zemin
   - Limit
   - Sword
+  - Bitcoin
+  - Harvestable
+  - Key
+  - Chest
   layers:
   - Default
   - TransparentFX

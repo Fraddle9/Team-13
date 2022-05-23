@@ -53,6 +53,7 @@ MonoBehaviour:
   carrier: {fileID: 0}
   UIToggleKey: 105
   dropRemovedItemPrefabs: 1
+  itemcs: {fileID: 0}
 --- !u!1001 &5691441215916632591
 PrefabInstance:
   m_ObjectHideFlags: 0
