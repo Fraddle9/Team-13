@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6181113720036532383}
   - component: {fileID: 2382586629488493722}
   - component: {fileID: -847237095985424584}
-  - component: {fileID: 4281207999230760389}
+  - component: {fileID: 1446241391838371053}
   m_Layer: 0
   m_Name: Tablet
   m_TagString: Untagged
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &4281207999230760389
+--- !u!114 &1446241391838371053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065547780005799110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca9f9f277c34ce34d9ad5d1244944ac8, type: 3}
+  m_Script: {fileID: 11500000, guid: d534a811f7d851f4b95009ba4801efc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  harvestItem: {fileID: 11400000, guid: 778a12af687170741a441c7c8a27e332, type: 2}
+  degreesPerSecond: 0
+  amplitude: 0.1
+  frequency: 0.5

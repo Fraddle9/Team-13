@@ -14,14 +14,14 @@ namespace XEntity
         private void Update()
         {
             //Rotate the collector object.
-            transform.Rotate(rotAxis, Time.deltaTime * 100);
+            //transform.Rotate(rotAxis, Time.deltaTime * 100);
         }
 
         //When the ItemCollector is attached to an object, this method should be called and the item this collector should be passed in.
         public void Create(Item item)
         {
             this.item = item;
-            Debug.Log("this.item");
+            //Debug.Log("this.item");
         }
 
         //On trigger with the interactor, attempt will be made to add this collector's item to the interactor's inventory.
@@ -29,7 +29,7 @@ namespace XEntity
         {
             Interactor interactor = other.GetComponent<Interactor>();
             if (interactor != null) interactor.AddToInventory(item, gameObject);
-            Debug.Log("Im interacting");
+            //Debug.Log("Im interacting");
         }
     }
 }

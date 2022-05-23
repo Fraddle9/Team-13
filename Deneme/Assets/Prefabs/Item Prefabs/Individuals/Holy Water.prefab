@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3630632642596236917}
   - component: {fileID: -272654070888723403}
   - component: {fileID: 3181720591621370462}
-  - component: {fileID: 1563305939289637042}
+  - component: {fileID: 8110921685340705868}
   m_Layer: 0
   m_Name: Holy Water
   m_TagString: Untagged
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &1563305939289637042
+--- !u!114 &8110921685340705868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +119,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7289254030745872746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca9f9f277c34ce34d9ad5d1244944ac8, type: 3}
+  m_Script: {fileID: 11500000, guid: d534a811f7d851f4b95009ba4801efc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  harvestItem: {fileID: 11400000, guid: 02659de27bca10f4ab067d488a70e46a, type: 2}
+  degreesPerSecond: 0
+  amplitude: 0.1
+  frequency: 0.5
