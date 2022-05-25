@@ -12,7 +12,6 @@ public class Sword_Behaviour : MonoBehaviour
     [HideInInspector] public bool inRange;
     public GameObject hotZone;
     public GameObject triggerArea;
-    public GameObject itemToDrop;
 
     public Transform leftLimit;
     public Transform rightLimit;
@@ -33,24 +32,23 @@ public class Sword_Behaviour : MonoBehaviour
     private bool isHurt;
 
     private bool attackMode;
-    
-    
+
+
 
     Transform PlayerPosition;
     #endregion
 
-    private void Awake() 
+    private void Awake()
     {
         isAvailable = true;
         SelectTarget();
         intTimer = timer;
         anim = GetComponent<Animator>();
 
-        
+
     }
     void Start()
     {
-        
         currentHealth = maxHealth;
         PlayerPosition = GameObject.FindGameObjectWithTag("Player").transform;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -59,20 +57,20 @@ public class Sword_Behaviour : MonoBehaviour
 
     void Update()
     {
-            if (!attackMode)
-            {
-                CloseGap();
-            }
+        if (!attackMode)
+        {
+            CloseGap();
+        }
 
-            if (!InsideOfLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
-            {
-                SelectTarget();
-            }
+        if (!InsideOfLimits() && !inRange && !anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
+        {
+            SelectTarget();
+        }
 
-            if (inRange == true)
-            {
-                EnemyLogic();
-            }
+        if (inRange == true)
+        {
+            EnemyLogic();
+        }
 
 
         if (!isAvailable)
@@ -80,21 +78,21 @@ public class Sword_Behaviour : MonoBehaviour
             Cooldown();
         }
 
-        
+
     }
 
     void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.position);
 
-        if(distance > attackDistance)
+        if (distance > attackDistance)
         {
             if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
             {
                 attackMode = false;
             }
         }
-        
+
         if (distance <= attackDistance)  //saldýrý menzili içinde
         {
             attackMode = true;
@@ -105,13 +103,13 @@ public class Sword_Behaviour : MonoBehaviour
 
     void CloseGap()
     {
-            anim.Play("Enemy_walk"); //animasyon
+        anim.Play("Enemy_walk"); //animasyon
 
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack")) //animation name here
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
 
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);     
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
     }
 
@@ -130,7 +128,7 @@ public class Sword_Behaviour : MonoBehaviour
         {
             anim.Play("Enemy_attack");
         }
-        
+
         timer = intTimer; //reset timer when player attacks
 
     }
@@ -139,7 +137,7 @@ public class Sword_Behaviour : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if(timer <= 0)
+        if (timer <= 0)
         {
             isAvailable = true;
             timer = intTimer;
@@ -176,9 +174,8 @@ public class Sword_Behaviour : MonoBehaviour
     public void Flip()
     {
         Vector3 rotation = transform.eulerAngles;
-        if(transform.position.x > target.position.x)
+        if (transform.position.x > target.position.x)
         {
-
             rotation.y = 180f;
         }
         else if (transform.position.x < target.position.x)
@@ -190,7 +187,7 @@ public class Sword_Behaviour : MonoBehaviour
 
     private void CheckforPlayer()               //animation event     //could be improvised
     {
-        if(inRange == false)
+        if (inRange == false)
         {
             attackMode = false;
         }
@@ -208,7 +205,7 @@ public class Sword_Behaviour : MonoBehaviour
         else
         {
             isHurt = true;
-            anim.Play("Enemy_hit");    
+            anim.Play("Enemy_hit");
         }
     }
     public void isHurta()
@@ -222,11 +219,9 @@ public class Sword_Behaviour : MonoBehaviour
         this.enabled = false;
         anim.Play("Enemy_dead");
         Invoke("Eliminate", 1.5f);
-        Instantiate(itemToDrop, transform.position, Quaternion.identity);
-
     }
     private void Eliminate()
     {
-         Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

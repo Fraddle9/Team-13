@@ -11,6 +11,9 @@ TagManager:
   - Harvestable
   - Key
   - Chest
+  - CheckPoint
+  - MinionwPoke
+  - turn
   layers:
   - Default
   - TransparentFX
