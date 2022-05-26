@@ -333,6 +333,7 @@ MonoBehaviour:
   currentCheckPoint: {fileID: 0}
   reviveEffect: {fileID: 1220232784898456290, guid: 1867e6d6b78dcd842a81be3c96488bdc, type: 3}
   flickerSpeed: 5
+  managerGame: {fileID: 0}
   MaxHealth: 100
   CurrentHealth: 100
   damageable: 1

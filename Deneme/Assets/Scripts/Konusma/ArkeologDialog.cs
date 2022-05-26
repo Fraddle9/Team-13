@@ -2,52 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ArkeologDialog : MonoBehaviour
 {
-    public static void DialogBaslat(Transform parent, Vector3 localPosition, string text)
-    {
-        Transform arkeologDialogTransform = Instantiate(GameAssets.i.pfKonusmaBalon, parent);
-        arkeologDialogTransform.localPosition = localPosition;
-
-        arkeologDialogTransform.GetComponent<ArkeologDialog>().Setup(text);
-
-        //Destroy(arkeologDialogTransform.gameObject, 4f);
-    }
-    private SpriteRenderer bgSpriteRendererKonusmaBalon;
-    private SpriteRenderer bgSpriteRendererKuyruk;
-    private TextMeshPro textMeshPro;
-    [SerializeField] GameObject _hero;
+    private TextMeshProUGUI ArkeologMesajText;
+    private int arkeologSayac = 0;
+    private TextWriter.TextWriterSingle textWriterSingle;
 
     private void Awake()
     {
-        bgSpriteRendererKonusmaBalon = transform.Find("KonusmaBalon").GetComponent<SpriteRenderer>();
-        bgSpriteRendererKuyruk = transform.Find("BalonKuyruk").GetComponent<SpriteRenderer>();
-        textMeshPro = transform.Find("ArkeologText").GetComponent<TextMeshPro>();
+        ArkeologMesajText = transform.Find("arkeologDialog").Find("mesajText").GetComponent<TextMeshProUGUI>();
+
+        transform.Find("arkeologDialog").GetComponent<Button>().onClick.AddListener(Arkeolog);
+        //TextWriter.AddWriter_Static(ArkeologMesajText, "O dersi neden alttan aldýðýn þimdi anlaþýlýyor..Cahil çocuðum.. E hadi biraz zorla da çevir þunu!", .05f, true, true);
+        
     }
 
     private void Start()
     {
-        Setup("Hello");
+        //TextWriter.AddWriter_Static(mesajText, "Ne bakýyorsun çocuðum kazsana", 0.1f, true);
+        //TextWriter.AddWriter_Static(ArkeologMesajText, "O dersi neden alttan aldýðýn þimdi anlaþýlýyor..Cahil çocuðum.. E hadi biraz zorla da çevir þunu!", .05f, true, true);
+
     }
 
-    private void FixedUpdate()
+    
+    void Arkeolog()
     {
-        transform.position = new Vector3(_hero.transform.position.x, _hero.transform.position.y, _hero.transform.position.z);
-    }
-
-    //Text'e yazý yazmak için fonksiyon
-    private void Setup(string text)
-    {
-        textMeshPro.SetText(text);
-        textMeshPro.ForceMeshUpdate();
-        Vector2 textBoyutu = textMeshPro.GetRenderedValues(false);
-
-        
-        //Vector2 padding = new Vector2(7f, 3f);
-        //bgSpriteRendererKonusmaBalon.size = textBoyutu + padding;
-
-        //Vector3 offset = new Vector3(-3f, 0f);
-        //bgSpriteRendererKonusmaBalon.transform.localPosition = new Vector3(bgSpriteRendererKonusmaBalon.size.x / 2f, 0f) + offset;
+        if (textWriterSingle != null && textWriterSingle.IsActive())
+        {
+            textWriterSingle.WriteAllAndDestroy();
+        }
+        else
+        {
+            string[] mesajArray = new string[] {
+                "Hocam ben Arif deðilim.",//0
+                "Pfft. Peki, neredeyim ben? Maðara mý burasý?",//1
+                "Allah taksiratýmý affetsin. Peki derin bilgilerinizle bana yardýmcý olurmusunuz? Sayýn Ýlter Altaylý hocam.",//2
+                "Helal ulan kerata! Þimdi de A ’ya basarak sol tarafý çalýþtýr bakayým.",//3
+                "Helal çocuðum! Sende hala umut görüyorum, adam olacaksýn be Arif!",//4
+                "Her neyse iþte Ekrem.",//5
+                "Yol boyunca ihtiyacýn olacak her þey burada elinin altýnda olmalý.",//6
+                "Hahahah, demek sonunda hakettiðin yerdesin. Projelerimi yapmamanýn cezasý! Cehennem.",//7
+                "Cehaletinin bende makul bir zemine oturmasý þart deðil. Fakat yine de bana muhtaçsýn tabii. Eh, yapacak bir þey yok..",//8
+                "O dersi neden alttan aldýðýn þimdi anlaþýlýyor..Cahil çocuðum.. E hadi biraz zorla da çevir þunu!",//9
+            };
+            string message = mesajArray[arkeologSayac++];
+            textWriterSingle = TextWriter.AddWriter_Static(ArkeologMesajText, message, .05f, true, true);
+        }
     }
 }

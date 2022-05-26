@@ -5,14 +5,17 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Button hocaButon;
+    public Button arkeologButon;
+    private TextWriter.TextWriterSingle textWriterSingle;
+
+    private void Awake()
     {
-        
+        HocaDialog hcDialog = new HocaDialog();
+        hocaButon.onClick.AddListener(hcDialog.Hoca);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         
     }
