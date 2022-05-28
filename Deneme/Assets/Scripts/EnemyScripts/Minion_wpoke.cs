@@ -18,7 +18,7 @@ public class Minion_wpoke : MonoBehaviour
     private Rigidbody2D rb;
     Vector3 movement;
     bool Moveright = true;
-    public float step = 2;
+    float step = 2;
     bool change = false;
 
 
@@ -205,20 +205,11 @@ public class Minion_wpoke : MonoBehaviour
     }
     void AutoMove()
     {
-        step = 3f;
+        step = 6f;
         if (Moveright)
-        {
             Enemy_Move(step);
-            
-        }
-
-
         else
-        {
             Enemy_Move(-step);
-            
-        }
-            
     }
 
     private void OnTriggerEnter2D(Collider2D trig)
