@@ -220,7 +220,7 @@ public class PlayerController : MonoBehaviour
         attackDamage += 2;
         attackCount++;
         isCombo = true;
-
+       
         if (attackCount > 2 || attackTime > 0.6f)
         {
             attackCount = 1;
