@@ -235,7 +235,7 @@ public class PlayerController : MonoBehaviour
                 enemy.GetComponent<Sword_Behaviour>().TakeDamage(attackDamage);
             if (enemy.CompareTag("MinionwPoke"))
                 enemy.GetComponent<Minion_wpoke>().TakeDamage(attackDamage * 1.25f);
-
+            
         }
         attackTime = 0f;
     }
