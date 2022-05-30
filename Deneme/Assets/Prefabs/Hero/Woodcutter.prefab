@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Color: {r: 0.990566, g: 0.968168, b: 0.19063719, a: 1}
   m_Intensity: 10.64
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000c7e5af5a29e07b769fbabbbae936d4c9
+  m_ApplyToSortingLayers: 00000000c7e5af5a29e07b76e936d4c99fbabbba
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 614616313}
   - component: {fileID: 1554081342}
   - component: {fileID: 2956826351267675943}
+  - component: {fileID: 1176779547}
   m_Layer: 0
   m_Name: Woodcutter
   m_TagString: Player
@@ -333,7 +334,8 @@ MonoBehaviour:
   currentCheckPoint: {fileID: 0}
   reviveEffect: {fileID: 1220232784898456290, guid: 1867e6d6b78dcd842a81be3c96488bdc, type: 3}
   flickerSpeed: 5
-  managerGame: {fileID: 0}
+  LevelUp: {fileID: 0}
+  Fener: {fileID: 4563576628470530356}
   MaxHealth: 100
   CurrentHealth: 100
   damageable: 1
@@ -370,3 +372,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 0
+--- !u!114 &1176779547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781381410289079529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fc8258e72c3f043af33b13617eaa66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hocaButon: {fileID: 0}
+  arkeologButon: {fileID: 0}
+  HocaMesajText: {fileID: 0}
+  ArkeologMesajText: {fileID: 0}
