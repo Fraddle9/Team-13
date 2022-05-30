@@ -8,6 +8,9 @@ namespace XEntity
     //This holds the different types of interaction events and interaction trigger methods.
     public class Interactor : MonoBehaviour
     {
+
+        public static Interactor instance;
+
         //The minimum distance to an object in order to interact.
         [SerializeField] private float interactionRange;
 
@@ -30,6 +33,17 @@ namespace XEntity
 
         private ItemSlot[] slots;
         string itemname;
+        public string key;
+        public int amount = 0;
+        public int coinneed = 10;
+        public int tabletneed = 3;
+        public int hwaterneed = 1;
+        public int keyneed = 1;
+        public string message = ("Açlýk Sýnýrý\n -Altýn 0/10");
+        public string message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý 0/3");
+        public string message2 = ("Susadým çeþmeye\n -Can suyu 0/1");
+        public string message3 = ("Anahtarlar\n -Anahtar 0/1");
+
 
         List<string> HaveItems = new List<string>();
 
@@ -40,6 +54,7 @@ namespace XEntity
         private void Update()
         {
             HandleInteractions();
+            instance = this;
 
         }
 
@@ -52,18 +67,6 @@ namespace XEntity
             }
         }
 
-        //public void OnTriggerEnter2D(Collider2D collision)
-        //{
-        //    public void callCollision() {
-        //        Debug.Log("Inside OT2D");
-        //        Interactable interactable = collision.GetComponent<Interactable>();
-        //        if (interactable != null)
-        //        {
-        //            Debug.Log("Interactable");
-        //        }
-        //    }
-        //}
-
         //This method handles the interactable object detection, interaction trigger and the interaction event callbacks.
 
         private void HandleInteractions()
@@ -75,33 +78,10 @@ namespace XEntity
             
             
 
-            if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true)
+            if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true && hit.transform.tag != "Zemin")
             {
-                //string temp;
+
                 Interactable target = hit.transform.GetComponent<Interactable>();
-                //Debug.Log(ItemContainer.Instance.slots[i]);
-                //for (int i = 0; i < 20; i++)
-                //{
-                    //string temp = ("" + inventory.slots[i].slotItem);
-
-                    //Debug.Log(ItemContainer.Instance.slots[i]);
-                    ////Debug.Log("Tablet");
-                    //if (ItemContainer.Instance.slots[i].CompareTag("Key"))
-                    //{
-                    //    Debug.Log("Key");
-                    //}
-                    //else continue;
-
-                    //if (ItemContainer.Instance.slots[i].slotItem.itemPerSlot == 10)
-                    //{
-                    //    Debug.Log("HolyWater");
-                    //}
-                    //else continue;
-                //}
-
-                //temp = ItemContainer.Instance.slots[0].slotItem.name;
-                //Debug.Log("slots = " + ItemContainer.Instance.slots[0].slotItem);
-                //Debug.Log("temp = " + temp);
 
                 if (target.tag == "Chest" && target != null && hit.transform.GetComponent<Interactable>()) //&& ItemContainer.Instance.slots[0].slotItem.name == "Tablet"
                 {
@@ -120,12 +100,6 @@ namespace XEntity
                     interactionTarget = target;
                     //Debug.Log(target.name);
                 }
-
-                //else if (target != null)
-                //{
-                //    interactionTarget = target;
-                //    //Debug.Log(target.name);
-                //}
 
             }
             else
@@ -156,8 +130,93 @@ namespace XEntity
             if (inventory.AddItem(item))
                 if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
             HaveItems.Add(item.name);
-            HaveItems = HaveItems.Distinct().ToList();
+
+            CheckInventory();
+
+            TaskManager.instance.UpdateTask();
+
+            //HaveItems = HaveItems.Distinct().ToList();
             //Debug.Log("AddtoInventory: item " + item + " instance " + instance);
         }
+        public void CheckInventory()
+        {
+            foreach (var group in HaveItems.GroupBy(i => i))
+            {
+                amount = group.Count();
+                key = group.Key;
+
+                if (key == "Coin")
+                {
+                    if (amount >= coinneed)
+                    {
+                        message = ("Açlýk Sýnýrý\n +COMPLETED");
+                    }
+                    else
+                    {
+                        message = ("Açlýk Sýnýrý\n -Altýn " + amount + "/10");
+                        Debug.Log("0 = " + message);
+                    }
+                    
+                }
+                else if (!HaveItems.Contains("Coin")) { message = ("Açlýk Sýnýrý\n -Altýn 0/10"); }
+
+                if (key == "Tablet")
+                {
+                    if (amount >= tabletneed)
+                    {
+                        message1 = ("Cahilliði üstünden at\n +COMPLETED");
+                        if (amount == tabletneed)
+                        {
+                            ScoreManager.instance.AddPoint();
+                        }
+                    }
+                    else
+                    {
+                        message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý " + amount + "/3");
+                        Debug.Log("1 = " + message1);
+                    }
+                    
+                }
+                else if (!HaveItems.Contains("Tablet")) { message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý 0/3"); }
+
+                if (key == "Holy Water")
+                {
+                    if (amount >= hwaterneed)
+                    {
+                        message2 = ("Susadým çeþmeye\n +COMPLETED");
+                    }
+                    else
+                    {
+                        message2 = ("Susadým çeþmeye\n -Can suyu " + amount + "/1");
+                        Debug.Log("2 = " + message2);
+                    }
+                    
+                }
+                else if (!HaveItems.Contains("Holy Water")) { message2 = ("Susadým çeþmeye\n -Can suyu 0/1"); }
+
+                if (key == "Key")
+                {
+                    if (amount >= keyneed)
+                    {
+                        message3 = ("Anahtarlar\n +COMPLETED");
+                    }
+                    else
+                    {
+                        message3 = ("Anahtarlar\n -Anahtar " + amount + "/1");
+                        Debug.Log("3 = " + message3);
+                    }
+                    
+                }
+                else if (!HaveItems.Contains("Key")) { message3 = ("Anahtarlar\n -Anahtar 0/1"); }
+
+                //Debug.Log(string.Format("You Have {0}: {1}", amount, key));
+            }
+
+            //message =  (key + " " + amount + "/" + need);
+            //message1 = (key + " " + amount + "/" + need);
+            //message2 = (key + " " + amount + "/" + need);
+            //message3 = (key + " " + amount + "/" + need);
+        }
+        
     }
 }

@@ -11,6 +11,12 @@ TagManager:
   - Harvestable
   - Key
   - Chest
+  - Baslik
+  - Aciklama
+  - Ikon
+  - "Yaz\u0131tButonu"
+  - KitapButon
+  - KarakterButonu
   layers:
   - Default
   - TransparentFX

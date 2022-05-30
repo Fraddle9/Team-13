@@ -50,9 +50,13 @@ namespace XEntity
         {
             for (int i = 0; i < amount; i++) 
             {
+                dropPosition.x = dropPosition.x + 3;
+                dropPosition.y = dropPosition.y -0.5f;
                 if (itemCount > 0)
                 {
+                    
                     Utils.InstantiateItemCollector(slotItem, dropPosition);
+                    Debug.Log(dropPosition);
                     itemCount--;
                 }
                 else break;

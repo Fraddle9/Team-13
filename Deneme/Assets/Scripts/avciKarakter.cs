@@ -5,7 +5,15 @@ using DialogueEditor; //Editör kütüp ekleniyor.
 
 public class avciKarakter : MonoBehaviour
 {
+    public GameObject kitapbuton;
+
+
     public NPCConversation myConversation;
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        //
+    }
 
     private void OnMouseOver()
     {

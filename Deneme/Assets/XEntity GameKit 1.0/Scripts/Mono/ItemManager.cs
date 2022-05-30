@@ -17,6 +17,8 @@ namespace XEntity
         //Either assign the items manually when created or select the item scriptable object > right click > select Add To Item List 
         public List<Item> itemList = new List<Item>();
 
+        public PlayerManager playerManager;
+
         private void Awake()
         {
             //Singleton logic
@@ -74,6 +76,7 @@ namespace XEntity
         private void ConsumeItem(ItemSlot slot) 
         {
             Debug.Log("Consuming " + slot.slotItem.itemName);
+            playerManager.getHealed();
             slot.Remove(1);
         }
 
