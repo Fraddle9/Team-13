@@ -1,10 +1,11 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Sword_Behaviour : MonoBehaviour
 {
     #region public variables
+    public bool attackAvailable = false;
     public float attackDistance; //minimum distance for attack
     public float moveSpeed;
     public float timer; //cooldown between attacks
@@ -93,7 +94,7 @@ public class Sword_Behaviour : MonoBehaviour
             }
         }
 
-        if (distance <= attackDistance)  //saldýrý menzili içinde
+        if (distance <= attackDistance)  //saldÄ±rÄ± menzili iÃ§inde
         {
             attackMode = true;
             Attack();
@@ -115,13 +116,16 @@ public class Sword_Behaviour : MonoBehaviour
 
     void Attack()
     {
+        
         if (isHurt)
         {
+            
             return;
         }
         if (!isAvailable)
         {
-            anim.Play("Enemy_idle");
+            anim.Play("Enemy_walk");
+            
             return;
         }
         else if (isAvailable)
@@ -190,7 +194,9 @@ public class Sword_Behaviour : MonoBehaviour
         if (inRange == false)
         {
             attackMode = false;
+            attackAvailable = false;
         }
+        attackAvailable = true;
     }
 
 
