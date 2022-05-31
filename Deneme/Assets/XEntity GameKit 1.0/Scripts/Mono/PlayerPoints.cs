@@ -13,7 +13,7 @@ public class PlayerPoints : MonoBehaviour
         {
             Destroy(collision.gameObject);
             money++;
-            Debug.Log(money);
+            //Debug.Log(money);
             ScoreManager.instance.AddPoint();
         }
     }

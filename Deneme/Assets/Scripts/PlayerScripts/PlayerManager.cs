@@ -192,4 +192,14 @@ public class PlayerManager : MonoBehaviour
             Fener.gameObject.SetActive(false);
         }
     }
+    public void getHealed()
+    {
+        if (!dead)
+        {
+            CurrentHealth += 40;
+            healthBar.SetHealth(CurrentHealth);
+            Debug.Log("+40");
+        }
+    }
+
 }

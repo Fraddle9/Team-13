@@ -1244,6 +1244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1ea85359fa95f4795171c48fdfa2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kitapbuton: {fileID: 0}
   myConversation: {fileID: 707686536}
 --- !u!1 &1768925810 stripped
 GameObject:
@@ -1328,6 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList: []
+  playerManager: {fileID: 44724485}
 --- !u!4 &1975952238
 Transform:
   m_ObjectHideFlags: 0
