@@ -1416,7 +1416,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2007934009}
-  - component: {fileID: 2007934010}
   m_Layer: 0
   m_Name: magaraGiris
   m_TagString: Untagged
@@ -1439,52 +1438,50 @@ Transform:
   m_Father: {fileID: 1929418968}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2007934010
+--- !u!1 &2048514653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048514654}
+  - component: {fileID: 2048514655}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048514654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048514653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 630.4025, y: 408.7231, z: -21.850233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2048514655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007934008}
+  m_GameObject: {fileID: 2048514653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b9693893b1dae9428950c6f6525b18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 9
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":23.7999878,\"yPos\":411},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hocam
-    ben Arif de\u011Filim.\",\"parentUIDs\":[5],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":25,\"yPos\":11},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hah!
-    Elin aya\u011F\u0131n da uyu\u015Fmu\u015Ftur, hareket etmeyi de unutmu\u015Fsundur
-    \u015Fimdi sen.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0130lter
-    Altayl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":19.7999878,\"yPos\":118},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Elinin
-    alt\u0131ndaki D tu\u015Fu ile sa\u011F baca\u011F\u0131n\u0131 \xE7al\u0131\u015Ft\u0131rda
-    uyu\u015Fuklu\u011Funu at. Osmanl\u0131spor'dan Ufuk antrenmana ma\u011Fara i\xE7inde
-    devam ediyor.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0130lter
-    Altayl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":24.7999878,\"yPos\":216},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Helal
-    ulan kerata! \u015Eimdi de A \u2019ya basarak sol taraf\u0131 \xE7al\u0131\u015Ft\u0131r
-    bakay\u0131m.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0130lter
-    Altayl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":22.7999878,\"yPos\":312},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Helal
-    \xE7ocu\u011Fum!\\r\\nSende hala umut g\xF6r\xFCyorum, adam olacaks\u0131n be
-    Arif!\\r\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0130lter
-    Altayl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":24.7999878,\"yPos\":489},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Her
-    neyse i\u015Fte Ekrem.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\u0130lter
-    Altayl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
-  saveVersion: 110
-  DefaultName: "\u0130lter Altayl\u0131"
-  DefaultSprite: {fileID: 21300000, guid: cd0feb04db76a824c8aff8a755ad746a, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
-  NodeSerializedDataList:
-  - {fileID: 1393837297}
-  - {fileID: 1393837296}
-  - {fileID: 1393837295}
-  - {fileID: 1393837294}
-  - {fileID: 1393837293}
-  - {fileID: 1393837292}
-  ContinueFont: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 7d1a31cc2f0773248b5f6b339056ca37, type: 2}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
+  sounds: []
 --- !u!1 &2144349990
 GameObject:
   m_ObjectHideFlags: 0
