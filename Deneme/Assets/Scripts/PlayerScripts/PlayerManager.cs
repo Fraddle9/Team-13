@@ -13,6 +13,9 @@ public class PlayerManager : MonoBehaviour
     public float flickerSpeed;
     private bool flickering;
 
+    public GameObject LevelUp;
+    public GameObject Fener;
+
     public static PlayerManager instance;
 
     private int lives = 2;
@@ -163,4 +166,30 @@ public class PlayerManager : MonoBehaviour
         // CurrentHealth = 100;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //LevelUp ac kapa
+        if (collision.gameObject.name == "LevelUpTrigerO")
+        {
+            LevelUp.gameObject.SetActive(true);
+            Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.name == "LevelUpTrigerC")
+        {
+            LevelUp.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "Tuzak" || collision.gameObject.name == "Tuzak2")
+        {
+            Debug.Log("Tuzak");
+            damageable = true;
+            DamagePlayer(100);
+        }
+
+        if (collision.gameObject.name == "FenerBozulma")
+        {
+            Fener.gameObject.SetActive(false);
+        }
+    }
 }
