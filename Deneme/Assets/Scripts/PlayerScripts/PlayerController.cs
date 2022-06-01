@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     public float attackRange = 0.5f;
     public int attackDamage = 10;
     public LayerMask enemyLayers;
-    private bool isAttacking;
+    private bool isAttacking = false;
     private PlayerManager playerManager;
     [HideInInspector] public bool inCheckpointRange;
     [HideInInspector] public bool dead = false;
@@ -121,25 +121,39 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+
         if (!canMove)
         {
             rb.velocity = new Vector2(0, 0);
             return;
         }
-
+        else if(isGrounded && rb.velocity.x != 0){
+                FindObjectOfType<SoundManager>().Play("HeroRun");
+        }
+        else if(rb.velocity.x == 0 || !isGrounded)
+        {
+            FindObjectOfType<SoundManager>().Stop("HeroRun");
+        }
         if (!isAttacking)
         {
-
+            
             if (!walkToggle)
+            {
+                
                 rb.velocity = new Vector2(xAxis * runSpeed, rb.velocity.y);
+            }
+                
             else
+                
                 rb.velocity = new Vector2(xAxis * walkSpeed, rb.velocity.y);
         }
+        
     }
     void Jump()
     {
+        FindObjectOfType<SoundManager>().Play("HeroJump");
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-
+        
     }
 
 
@@ -168,7 +182,8 @@ public class PlayerController : MonoBehaviour
                         ChangeAnimationState(idle);
                     else
                         ChangeAnimationState(run);
-                }
+                
+            }
 
                 if (isAttacking)
                 {
@@ -206,9 +221,17 @@ public class PlayerController : MonoBehaviour
             {
                 if (isGrounded)
                     if (isCombo && attackTime > 0.3f)
-                        Attack();
+                {
+                    Attack();
+                    FindObjectOfType<SoundManager>().Play("HeroAttack");
+                }
+                        
                     else if (!isCombo)
-                        Attack();
+                {
+                    Attack();
+                    FindObjectOfType<SoundManager>().Play("HeroAttack");
+                }
+                        
             }
                         
     }

@@ -19,6 +19,7 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
+        
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -50,7 +51,8 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         // Add this part after having a theme song
-        // Play('Theme');
+        Play("Music");
+        Play("Ambiance");
     }
     public void Play(string name)
     {
@@ -67,6 +69,20 @@ public class SoundManager : MonoBehaviour
         sound.source.Play();
     }
 
+    /*public void PlayOnce(string name)
+    {
+        Sound sound = Array.Find(sounds, s => s.name == name);
+
+        if (sound == null)
+        {
+            Debug.LogError("Sound " + name + " Not Found!");
+            return;
+        }
+
+        if (!CanPlaySound(sound)) return;
+
+        sound.source.PlayOneShot(sound.clip);
+    }*/
     public void Stop(string name)
     {
         Sound sound = Array.Find(sounds, s => s.name == name);
@@ -81,20 +97,21 @@ public class SoundManager : MonoBehaviour
     }
 
     private static bool CanPlaySound(Sound sound)
-    {
-        if (soundTimerDictionary.ContainsKey(sound.name))
-        {
-            float lastTimePlayed = soundTimerDictionary[sound.name];
+    {      
+        
+            if (soundTimerDictionary.ContainsKey(sound.name))
+         {
+              float lastTimePlayed = soundTimerDictionary[sound.name];
+    
+             if (lastTimePlayed + sound.clip.length < Time.time)
+                {
+                 soundTimerDictionary[sound.name] = Time.time;
+                 return true;
+                }
+    
+               return false;
+         }
 
-            if (lastTimePlayed + sound.clip.length < Time.time)
-            {
-                soundTimerDictionary[sound.name] = Time.time;
-                return true;
-            }
-
-            return false;
-        }
-
-        return true;
+         return true;
     }
 }

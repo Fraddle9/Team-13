@@ -20,6 +20,7 @@ TagManager:
   - "Yaz\u0131tButonu"
   - KitapButon
   - KarakterButonu
+  - SoundManager
   layers:
   - Default
   - TransparentFX
