@@ -329,7 +329,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3163909876518685739}
-  - component: {fileID: 7607268566978373649}
   m_Layer: 0
   m_Name: Arkeolog_Dialog
   m_TagString: Untagged
@@ -359,16 +358,3 @@ RectTransform:
   m_AnchoredPosition: {x: 130, y: -73.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7607268566978373649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7607268566978373655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b70b73d4ed83544b6c92744989d42a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hero: {fileID: 7781381410289079529, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}

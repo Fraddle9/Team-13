@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -190,6 +191,11 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.name == "FenerBozulma")
         {
             Fener.gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.name == "Portal")
+        {
+            SceneManager.LoadScene("Gokyuzu");
         }
     }
     public void getHealed()

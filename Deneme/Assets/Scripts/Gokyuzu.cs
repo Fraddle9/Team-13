@@ -51,7 +51,7 @@ public class Gokyuzu : MonoBehaviour
 
         if (collision.gameObject.name == "Dusus")
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("GokyuzuDonus");
         }
     }
 

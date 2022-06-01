@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor; //Editör kütüp ekleniyor.
 
-public class avciKarakter : MonoBehaviour
+public class KarakterDialog : MonoBehaviour
 {
     public GameObject kitapbuton;
 
