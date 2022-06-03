@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7781636531010449663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7781636531010449660}
+  - component: {fileID: 7781636531010449661}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: SoundManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7781636531010449660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781636531010449663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 630.4025, y: 408.7231, z: -21.850233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7781636531010449661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7781636531010449663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9693893b1dae9428950c6f6525b18a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: HeroRun
+    clip: {fileID: 8300000, guid: 65063b0a1e2a51648a23ebe819fc6257, type: 3}
+    volume: 0.7
+    pitch: 1
+    isLoop: 0
+    hasCooldown: 1
+    source: {fileID: 0}
+  - name: HeroAttack
+    clip: {fileID: 8300000, guid: 89f7628e119a1924ebc7287b604ed1e9, type: 3}
+    volume: 1
+    pitch: 1
+    isLoop: 0
+    hasCooldown: 0
+    source: {fileID: 0}
+  - name: HeroJump
+    clip: {fileID: 8300000, guid: 984c05c154a81304aadebdfd5467a628, type: 3}
+    volume: 1
+    pitch: 1
+    isLoop: 0
+    hasCooldown: 0
+    source: {fileID: 0}
+  - name: Ambiance
+    clip: {fileID: 8300000, guid: 545713ae628a90e498caec5dd0bbe972, type: 3}
+    volume: 1
+    pitch: 1
+    isLoop: 1
+    hasCooldown: 0
+    source: {fileID: 0}
+  - name: Music
+    clip: {fileID: 8300000, guid: b2e19145677f6684c90936e5e43420e4, type: 3}
+    volume: 0.7
+    pitch: 0.5
+    isLoop: 1
+    hasCooldown: 0
+    source: {fileID: 0}

@@ -831,6 +831,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6180279694331737301, guid: 06db5cad1543ba348aeefeb20d3056e7, type: 3}
   m_PrefabInstance: {fileID: 6180279693629737883}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1086384427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 630.4025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 408.7231
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.850233
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449660, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449663, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
 --- !u!114 &1100336095 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7540244168135318694, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
@@ -1444,50 +1501,6 @@ Transform:
   m_Father: {fileID: 1929418968}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2048514653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048514654}
-  - component: {fileID: 2048514655}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2048514654
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048514653}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 630.4025, y: 408.7231, z: -21.850233}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2048514655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048514653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b9693893b1dae9428950c6f6525b18a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds: []
 --- !u!1 &2144349990
 GameObject:
   m_ObjectHideFlags: 0
