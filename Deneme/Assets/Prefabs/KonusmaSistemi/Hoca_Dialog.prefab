@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 4026882436468761131}
   - component: {fileID: 4026882436468761134}
   - component: {fileID: 4026882436468761133}
-  - component: {fileID: 2534621162228119402}
   m_Layer: 0
   m_Name: Hoca_Dialog
   m_TagString: Untagged
@@ -114,18 +113,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2534621162228119402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4026882436468761130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9bcc66b05a5434c879c3936028c5fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4026882437205523047
 GameObject:
   m_ObjectHideFlags: 0

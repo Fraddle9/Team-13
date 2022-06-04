@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject LevelUp;
     public GameObject Fener;
+    public Light2D Globalisik;
 
     public static PlayerManager instance;
 
@@ -191,7 +194,20 @@ public class PlayerManager : MonoBehaviour
         {
             Fener.gameObject.SetActive(false);
         }
+
+        if (collision.gameObject.name == "Portal")
+        {
+            StartCoroutine(PortalGecit());
+        }
     }
+
+    IEnumerator PortalGecit()
+    {
+        Globalisik.intensity = 300;
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Gokyuzu");
+    }
+
     public void getHealed()
     {
         if (!dead)
