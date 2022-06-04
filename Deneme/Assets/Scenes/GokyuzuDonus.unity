@@ -295,6 +295,10 @@ PrefabInstance:
       propertyPath: PanelDialogue
       value: 
       objectReference: {fileID: 1985297240}
+    - target: {fileID: 4563576628470530356, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7781381410289079529, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}
       propertyPath: m_Name
       value: Woodcutter
@@ -305,11 +309,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7781381410289079532, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.52
+      value: 7.64
       objectReference: {fileID: 0}
     - target: {fileID: 7781381410289079532, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.45
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7781381410289079532, guid: c52d2da6b412cc34eaa9f1eedfbdc3c3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -503,10 +507,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4132611220953018529, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
-      propertyPath: m_Name
-      value: Sag
-      objectReference: {fileID: 0}
     - target: {fileID: 4132611220953018543, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
       propertyPath: myConversation
       value: 
@@ -560,18 +560,10 @@ PrefabInstance:
       value: "Ge\xE7itAyisit"
       objectReference: {fileID: 0}
     - target: {fileID: 4132611221810468659, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
-      propertyPath: kitapbuton
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132611221810468659, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
       propertyPath: myConversation
       value: 
       objectReference: {fileID: 1704806978}
-    - target: {fileID: 4132611221810468661, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
-      propertyPath: m_Name
-      value: Sol
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132611222748745529, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
+    - target: {fileID: 4132611222748745531, guid: 8ed2024bd1520524b81e98b3f6fc3291, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -917,6 +909,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8868295001114155643, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8868295001114155645, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
       propertyPath: carrier
       value: 
@@ -1159,7 +1155,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1987829801
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 0.65625, z: 0}
   m_MaxChunkCount: 16
