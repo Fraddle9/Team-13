@@ -21,6 +21,7 @@ TagManager:
   - KitapButon
   - KarakterButonu
   - SoundManager
+  - interactionchecker
   layers:
   - Default
   - TransparentFX
