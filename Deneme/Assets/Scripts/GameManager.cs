@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,12 +13,15 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI HocaMesajText;
     public TextMeshProUGUI ArkeologMesajText;
     public Animator HocaAnim;
+    public GameObject interaction;
+    public GameObject interactionGokyuzu;
+    public GameObject dikiliTasObje;
+    public Light2D GokyuzuGlobalisik;
     private TextWriter.TextWriterSingle textWriterSingle;
 
     private void Awake()
     {
-        //HocaDialog hcDialog = new HocaDialog();
-        //hocaButon.onClick.AddListener(hcDialog.Hoca);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -68,10 +73,44 @@ public class GameManager : MonoBehaviour
             Destroy(collision.gameObject);
             StartCoroutine(GecitOnu());
         }
+
+        if (collision.gameObject.name == "dikilitas-yazili")
+        {
+            interaction.gameObject.SetActive(true);
+        }
+
+        if (collision.gameObject.name == "Cesme")
+        {
+            interactionGokyuzu.gameObject.SetActive(true);
+        }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "dikilitas-yazili" && Input.GetKey(KeyCode.E))
+        {
+            Instantiate(dikiliTasObje, new Vector3(collision.transform.position.x - 1f, collision.transform.position.y - 1), Quaternion.identity);
+            collision.enabled = false;
+        }
+
+        if (collision.gameObject.name == "Cesme" && Input.GetKey(KeyCode.E))
+        {
+            StartCoroutine(GeriDon());
+        }
+    }
+
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.name == "dikilitas-yazili")
+        {
+            interaction.gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.name == "Cesme")
+        {
+            interactionGokyuzu.gameObject.SetActive(false);
+        }
     }
 
     IEnumerator IlkDusme()
@@ -137,7 +176,7 @@ public class GameManager : MonoBehaviour
         //Hoca
         HocaAnim.enabled = true;
         TextWriter.AddWriter_Static(HocaMesajText, "O dersi neden alttan aldýðýn þimdi anlaþýlýyor..Cahil çocuðum.. E hadi biraz zorla da çevir þunu!", .05f, true, true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(6);
         HocaAnim.enabled = false;
 
         //Arkeolog
@@ -147,7 +186,7 @@ public class GameManager : MonoBehaviour
         //Hoca
         HocaAnim.enabled = true;
         TextWriter.AddWriter_Static(HocaMesajText, "Sanki harfler eskisi gibiyken o medeniyetin içine gömüldüydünüüüzz… Almadýn mý dersini sen bunun…", .05f, true, true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(6);
         TextWriter.AddWriter_Static(HocaMesajText, "Eðitsem bile cahil kalabilme baþarýsýný kimseyle paylaþmýyorsun.", .05f, true, true);
         yield return new WaitForSeconds(5);
         HocaAnim.enabled = false;
@@ -155,6 +194,10 @@ public class GameManager : MonoBehaviour
         //Arkeolog
         TextWriter.AddWriter_Static(ArkeologMesajText, "Hmm...", .05f, true, true);
         yield return new WaitForSeconds(1);
+        TextWriter.AddWriter_Static(ArkeologMesajText, "‘’Erlik maðarasýnda 13. günüm.Tengri beni korusun, Ülgen’in egemenliði daim olsun...", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(ArkeologMesajText, "Ýnsanlýk Erlik’in haylazlýk ve kötülüklerinden sakýnsýn.’’", .05f, true, true);
+        yield return new WaitForSeconds(5);
 
         //Hoca
         HocaAnim.enabled = true;
@@ -176,14 +219,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4);
         TextWriter.AddWriter_Static(HocaMesajText, "Yoksa da Erlik’ e akþam yemeði olursun hahah..", .05f, true, true);
         yield return new WaitForSeconds(4);
-        TextWriter.AddWriter_Static(HocaMesajText, "Yoksa da Erlik’ e akþam yemeði olursun hahah..", .05f, true, true);
-        yield return new WaitForSeconds(4);
         TextWriter.AddWriter_Static(HocaMesajText, "Þaka þaka. Dua et ki ben sana yardým ediyorum.Yoksa bu ot beyninle hayatta kalamazsýn..", .05f, true, true);
         yield return new WaitForSeconds(4);
         HocaAnim.enabled = false;
 
         //Arkeolog
-        TextWriter.AddWriter_Static(ArkeologMesajText, "Maþallah hocam, inþallah hocam. Allah sizi baþýmýzdan eksik etmesin hocam.", .05f, true, true);
+        TextWriter.AddWriter_Static(ArkeologMesajText, "Saðolun hocam iyiki yanýmdasýnýz vallahi.", .05f, true, true);
         yield return new WaitForSeconds(5);
         arkeologButon.transform.parent.gameObject.SetActive(false);
 
@@ -299,6 +340,14 @@ public class GameManager : MonoBehaviour
         TextWriter.AddWriter_Static(HocaMesajText, "Ceplerini ve kalbini kontrol et yavrum. Meteliksizdin dünyada ama bakalým burada neyin varmýþ.", .05f, true, true);
         yield return new WaitForSeconds(6);
         HocaAnim.enabled = false;
+    }
+
+
+    IEnumerator GeriDon()
+    {
+        GokyuzuGlobalisik.intensity = 0;
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("GokyuzuDonus");
     }
     /*ÞUAN KULLANILMIYOR!!*
      * *
