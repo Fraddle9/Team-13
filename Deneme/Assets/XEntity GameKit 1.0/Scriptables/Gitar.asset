@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bb37a5e4810a7744a6b9d1f88712c1d, type: 3}
-  m_Name: Yellow Mushroom
+  m_Name: Gitar
   m_EditorClassIdentifier: 
-  type: 2
-  itemName: Yellow Mushroom
+  type: 0
+  itemName: Muska
   itemPerSlot: 100
-  icon: {fileID: 21300000, guid: b1e349baf1733ac478e433f7bb949de3, type: 3}
-  prefab: {fileID: 8657910923137107997, guid: ec5d91232451fb14980c7c04fe64c697, type: 3}
+  icon: {fileID: 21300000, guid: f4a51a088a3ad4c4391b515001b18435, type: 3}
+  prefab: {fileID: 2065547780005799110, guid: 96646c20e2a8a9142abce9ade4611f45, type: 3}

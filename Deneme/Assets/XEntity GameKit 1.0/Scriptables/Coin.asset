@@ -15,5 +15,5 @@ MonoBehaviour:
   type: 0
   itemName: Coin
   itemPerSlot: 100
-  icon: {fileID: 21300000, guid: 1726d313c44e9ca4bbe81a7e95a6a2cc, type: 3}
+  icon: {fileID: -3338749442709606003, guid: 412261d6a9caa7d49821f1494adeea9c, type: 3}
   prefab: {fileID: 4108965627208543808, guid: 530fb960a12c6f547b131612af2d8a8a, type: 3}
