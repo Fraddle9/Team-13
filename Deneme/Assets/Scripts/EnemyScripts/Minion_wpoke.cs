@@ -308,7 +308,13 @@ public class Minion_wpoke : MonoBehaviour
         transform.position = movement;
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
+        Invoke("Eliminate", 1.5f);
     }
-
+    private void Eliminate()
+    {
+        Destroy(gameObject);
+    }
 }
+    
+
+
