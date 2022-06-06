@@ -155,4 +155,56 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 
 # Sprint 3
 
----
+- **Sprint Notları**: 
+    - [2.Sprint İş Paylaşımı](https://docs.google.com/document/d/11Fa3QlriOQh_sHqcuQ-V9aF_XlqqEXkfw2nQ6FU1fYk/edit?usp=sharing)
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint tasarım ve mekaniğe giriş ve geliştirme yapıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
+  - [2.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
+  - [2.SPRINT VISUAL](.)
+
+- **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, üçüncü sprint bölümünde çoğunlukla toparlama ve bug çözme kısmına yoğunlaşılmıştır. 
+
+Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde yer alırken aynı zamanda 3. sprintde kişilerin kendi iş kartlarında gün bazında çalışmaları yer almaktadır. Günlük bazda herkesin kendine ait boardunda yapılan işler ve çıkan işlerin çıktısı ise daily'de gözükmektedir. User story'ler 3.Sprint Done kısmındaki kişilerin görev kartının açıklama kısmında yer almaktadır.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack/Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örnekleri tek dosya halinde ss'lerin word dosyası halinde Readme'de tarafımızca paylaşılmaktadır: [Daily SS](https://docs.google.com/document/d/1m8l2RO5Yg3Qccpb7ie528--tHzdZnYICTSZH_UQEgkY/edit?usp=sharing)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/172178031-177180cd-4bf4-47cb-afd7-4b5ce20d8464.PNG)
+![trello çalışma alanı 2] ![t3](https://user-images.githubusercontent.com/104396833/172178122-616f7793-199c-403b-8340-904dbda724c6.PNG)
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+ 
+
+
+
+
+https://user-images.githubusercontent.com/104396833/172179266-b4624e12-4257-436e-a3b4-c33e1d6f2bb0.mp4
+
+
+
+
+
+https://user-images.githubusercontent.com/104396833/172179316-5c75e465-e72d-4576-8277-040fc692a3f7.mp4
+
+
+
+  
+
+
+- **Sprint Review**: 
+ Alınan kararlar: Oyun story-driven düzeneği ile hikaye- diyalog kısmı oturtulmuştur. İki level düzenlenilmiştir. Sinopsiste level içeriği, karakterler ve sözler yer almaktadır. İki level için mekanikler ve görseller oluşturuldu. Açılış sahnesindeki animasyon hikaye akışını verecek olup minumum iş ile sorun çözülmeye çalışıldı.  Animasyon için karakterin hikayesi ve konu aktarımı yapıldı. Seslendirme desteği ile birlikte oyun içi seslerle desteklenmiştir. 
+ 
+Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
+
+- **Sprint Retrospective:**
+  - Görev dağılımı backloga göre yapılmıştır. Toplantı kayıtları ve notlar alınması yerine son sprintte günlük toplantılara dönülmüştür. Katılan arkadaşlar ile yapılan işlerin değerlendirilmesi ve yapılandırılması üzerine konuşulmuştur. Free edinilen assetler ReadMe'de paylaşılmış olup, tasarım ve diğer grup içi çalışma dosyalarına ulaşmanız için drive linkleri eklenmiştir. 
+ 
+
+-**Diğer Notlar**:
+- 
+- [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
+- [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
+- [Çalışma Ekran Görüntüleri](https://drive.google.com/drive/u/0/folders/1QhdIp0-0MQTzu84KOdliSv7XTC2SDWDG)
