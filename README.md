@@ -178,18 +178,17 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 - **Ürün Durumu**: Ekran görüntüleri:
  
 
-https://user-images.githubusercontent.com/104396833/172175888-fd967834-3574-4895-98e0-e6e02043158e.mp4
 
 
 
-
-https://user-images.githubusercontent.com/104396833/172176016-e620c20b-602c-4981-902c-31681381b984.mp4
+https://user-images.githubusercontent.com/104396833/172179266-b4624e12-4257-436e-a3b4-c33e1d6f2bb0.mp4
 
 
 
 
 
-https://user-images.githubusercontent.com/104396833/172176173-1b9cf3b7-cdae-49cb-8adc-624895876fae.mp4
+https://user-images.githubusercontent.com/104396833/172179316-5c75e465-e72d-4576-8277-040fc692a3f7.mp4
+
 
 
   
