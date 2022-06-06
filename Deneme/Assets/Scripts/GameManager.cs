@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "DikiliTas")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(DikiliTas());
         }
@@ -44,6 +46,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "FenerBozulma")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(YarasaVeOcu());
         }
@@ -51,6 +55,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "LevelOncesi")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(LevelOncesi());
         }
@@ -58,6 +64,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "GulyabaniAlert")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(GulyabaniAlert());
         }
@@ -65,6 +73,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "GeciteGit")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(GeciteGit());
         }
@@ -72,6 +82,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "GecitOnu")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(GecitOnu());
         }
@@ -95,6 +107,8 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.name == "DikilitasTwo")
         {
             StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(DikilitasTwo());
         }
@@ -320,35 +334,19 @@ public class GameManager : MonoBehaviour
         TextWriter.AddWriter_Static(HocaMesajText, "Etraf soðuk ve boðuk. Gulyabaniler serüvene çýkmýþ kiþileri yiyip yutan varlýklar olarak bilinmektedir.", .05f, true, true);
         yield return new WaitForSeconds(6);
         TextWriter.AddWriter_Static(HocaMesajText, "Alim Allah yutuverirler seni, dikkat et…", .05f, true, true);
-        yield return new WaitForSeconds(8);
-        TextWriter.AddWriter_Static(HocaMesajText, "Vur evlet haa gayret. Bu zamlarýn altýnda ezilen halkýn için…", .05f, true, true);
-        yield return new WaitForSeconds(4);
-        TextWriter.AddWriter_Static(HocaMesajText, "Bu çocuðuna püskevit alamayan bacýn için…", .05f, true, true);
-        yield return new WaitForSeconds(4);
-        TextWriter.AddWriter_Static(HocaMesajText, "Bu da kpss’den puan alýp atanamayan niceleri için.. Vur…", .05f, true, true);
-        yield return new WaitForSeconds(4);
-        TextWriter.AddWriter_Static(HocaMesajText, "Humm ne keþfettin… Bakayým…", .05f, true, true);
         yield return new WaitForSeconds(3);
         HocaAnim.enabled = false;
-
-        //Arkeolog
-        arkeologButon.transform.parent.gameObject.SetActive(true);
-        TextWriter.AddWriter_Static(ArkeologMesajText, "Hocam yazýyor bir þeyler karýnca duasý gibi. Yok bir þey sanýrým…", .05f, true, true);
-        yield return new WaitForSeconds(5);
-        arkeologButon.transform.parent.gameObject.SetActive(false);
     }
 
     IEnumerator GeciteGit()
     {
         //Hoca
         HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "Muskayý buldun aferin, hadi bakalým þansýn açýk olsun fena deðilsin. Bir DC veririm derste sana.", .05f, true, true);
+        yield return new WaitForSeconds(6);
         TextWriter.AddWriter_Static(HocaMesajText, "Suyun kaynama noktasýný ilk bulan sen olsan gider çay demlersin heralde.", .05f, true, true);
         yield return new WaitForSeconds(5);
         TextWriter.AddWriter_Static(HocaMesajText, "Bu vizyon ile bulduðunu da heba edersin sen. Yaklaþtýr þunu yakýn gözlüðüm yok.", .05f, true, true);
-        yield return new WaitForSeconds(5);
-        TextWriter.AddWriter_Static(HocaMesajText, "Vayy hadi iyisin yine dört ayaðýnýn üzerine düþtün Robert hee.", .05f, true, true);
-        yield return new WaitForSeconds(5);
-        TextWriter.AddWriter_Static(HocaMesajText, "Kýzlar seni bekliyor koþ kerata. Bir geçit var ileride hadi koþ koþ…", .05f, true, true);
         yield return new WaitForSeconds(5);
         HocaAnim.enabled = false;
     }
@@ -363,7 +361,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(6);
         HocaAnim.enabled = false;
     }
-
 
     IEnumerator GeriDon()
     {
@@ -413,6 +410,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4);
         HocaAnim.enabled = false;
     }
+
     /*ÞUAN KULLANILMIYOR!!*
      * *
     public void Hoca(int i)
