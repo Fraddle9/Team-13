@@ -18,7 +18,7 @@ Takım 13
 
 --13.Gece--
  
-[logo](https://user-images.githubusercontent.com/104396833/172195256-69b87ee1-0a0c-4f3e-a673-6e594ccd5f67.jpeg)
+![logo](https://user-images.githubusercontent.com/104396833/172195256-69b87ee1-0a0c-4f3e-a673-6e594ccd5f67.jpeg)
 
 
 ## Ürün Açıklaması
