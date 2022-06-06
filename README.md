@@ -162,7 +162,7 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint tasarım ve mekaniğe giriş ve geliştirme yapıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
   - [3.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
-  - [3.SPRINT VISUAL] (https://github.com/Fraddle9/Team-13/files/8845409/3.SPRINTDONE.pdf)
+  - [3.SPRINT VISUAL](https://github.com/Fraddle9/Team-13/files/8845409/3.SPRINTDONE.pdf)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, üçüncü sprint bölümünde çoğunlukla toparlama ve bug çözme kısmına yoğunlaşılmıştır. 
 
@@ -172,7 +172,7 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/172178031-177180cd-4bf4-47cb-afd7-4b5ce20d8464.PNG)
-![trello çalışma alanı 2] ![t3](https://user-images.githubusercontent.com/104396833/172178122-616f7793-199c-403b-8340-904dbda724c6.PNG)
+![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/172178122-616f7793-199c-403b-8340-904dbda724c6.PNG)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
