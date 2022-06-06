@@ -16,7 +16,9 @@ Takım 13
 
 ## Ürün İsmi 
 
-[--13.Gece--](https://user-images.githubusercontent.com/104396833/172193907-34a47610-7bb9-4712-b5d7-d3347cfbf405.jpeg)
+--13.Gece--
+ 
+[logo](https://user-images.githubusercontent.com/104396833/172195256-69b87ee1-0a0c-4f3e-a673-6e594ccd5f67.jpeg)
 
 
 ## Ürün Açıklaması
