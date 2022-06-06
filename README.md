@@ -8,11 +8,11 @@ Takım 13
 
 ## Takım Üyeleri
 
-- Nuh Aktürk: Product Owner/Developer
+- Nuh Aktürk: Product Owner/ Level Designer
 - Dilek Oflaz: Scrum Master / Game Artist
-- Oğuzhan Akkök: Game Artist / Developer
-- İrem Ayşe Kayacıoğlu: Team Member/Developer
-- Recep Akkaya: Team Member/Developer
+- Oğuzhan Akkök: Pixel Artist / Developer
+- İrem Ayşe Kayacıoğlu: Team Member/ Developer
+- Recep Akkaya: Team Member/ Developer
 
 ## Ürün İsmi 
 
