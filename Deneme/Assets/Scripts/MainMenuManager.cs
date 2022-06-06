@@ -9,6 +9,8 @@ public class MainMenuManager : MonoBehaviour
     public AudioMixer audioMixer;
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
+    public GameObject HK_giris;
+    public GameObject Animasyon;
 
     private void Start()
     {
@@ -34,7 +36,7 @@ public class MainMenuManager : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1); //Sýradaki sahneyi yükler
+        StartCoroutine(GameStartHikayeGiris());
     }
 
     public void QuitGame()
@@ -63,4 +65,17 @@ public class MainMenuManager : MonoBehaviour
 
     }
 
+    IEnumerator GameStartHikayeGiris()
+    {
+        Animasyon.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        Animasyon.gameObject.SetActive(false);
+        
+        HK_giris.gameObject.SetActive(true);
+        yield return new WaitForSeconds(23);
+        
+        Animasyon.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Sýradaki sahneyi yükler
+    }
 }

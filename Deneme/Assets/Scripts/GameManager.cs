@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject interactionGokyuzu;
     public GameObject dikiliTasObje;
     public Light2D GokyuzuGlobalisik;
+    public GameObject Yarasalar;
+    public GameObject GirisKonusma;
     private TextWriter.TextWriterSingle textWriterSingle;
 
     private void Awake()
@@ -83,6 +85,19 @@ public class GameManager : MonoBehaviour
         {
             interactionGokyuzu.gameObject.SetActive(true);
         }
+
+        if (collision.gameObject.name == "Cansuyu")
+        {
+            Destroy(collision.gameObject);
+            StartCoroutine(CanSuyu());
+        }
+
+        if (collision.gameObject.name == "DikilitasTwo")
+        {
+            StopAllCoroutines();
+            Destroy(collision.gameObject);
+            StartCoroutine(DikilitasTwo());
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -115,6 +130,11 @@ public class GameManager : MonoBehaviour
 
     IEnumerator IlkDusme()
     {
+        yield return new WaitForSeconds(2);
+        GirisKonusma.gameObject.SetActive(true);
+        yield return new WaitForSeconds(53);
+        GirisKonusma.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1);
         //Hoca
         HocaAnim.enabled= true;
         TextWriter.AddWriter_Static(HocaMesajText, "Hah! Elin ayaðýn da uyuþmuþtur, hareket etmeyi de unutmuþsundur þimdi sen.", .05f, true, true);
@@ -243,10 +263,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator YarasaVeOcu()
     {
+        Yarasalar.gameObject.SetActive(true);
         //Hoca
         HocaAnim.enabled = true;
         TextWriter.AddWriter_Static(HocaMesajText, "Aman dikkat et yarasalarýn akþam yemeði olacak gibisin.", .05f, true, true);
         yield return new WaitForSeconds(10);
+        Yarasalar.gameObject.SetActive(false);
         TextWriter.AddWriter_Static(HocaMesajText, "Maç vardý da bedava bilet mi daðýttýlar bunlarýn ardý arkasý kesilmiyor.", .05f, true, true);
         yield return new WaitForSeconds(5);
         HocaAnim.enabled = false;
@@ -348,6 +370,48 @@ public class GameManager : MonoBehaviour
         GokyuzuGlobalisik.intensity = 0;
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("GokyuzuDonus");
+    }
+
+    IEnumerator CanSuyu()
+    {
+        //Hoca
+        HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "Her fidanýn can suyuna ihtiyacý var. Yeþili sadece dolarýn üzerindeki renk olarak sevenlerden olma.", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(HocaMesajText, "Akana sana bir can suyu bahþettiði için þanslýsýn Halet. Bunu sok þimdi koynuna, aman düþürüp kaybetme.", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(HocaMesajText, "Ya da boynuna baðla ilkokuldaki silgi gibi. Ha silgi, ha küçükbaþ çaný ne fark ediyor, güdülmeye çok alýþtýnýz...", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        HocaAnim.enabled = false;
+    }
+
+    IEnumerator DikilitasTwo()
+    {
+        //Hoca
+        HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "Viyana kapýlarýna dayanýr gibi dayanma oðlum dikilitaþa, hassas þeyler onlar.", .05f, true, true);
+        yield return new WaitForSeconds(5);
+        TextWriter.AddWriter_Static(HocaMesajText, "Elinin ayaðýnýn ayarý yok ya. Göklerden bir haber indi de bunu mu seçtiler yani…", .05f, true, true);
+        yield return new WaitForSeconds(5);
+        TextWriter.AddWriter_Static(HocaMesajText, "Hem beceriksiz hem cahil… Yakýnda ölür bu.", .05f, true, true);
+        yield return new WaitForSeconds(4);
+        HocaAnim.enabled = false;
+    }
+
+    public void Basarisiz()
+    {
+        StartCoroutine(BasarisizIE());
+    }
+
+    IEnumerator BasarisizIE()
+    {
+        //Hoca
+        HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "O kadar görevler için seçilmiþ insanlarý tanýdým, tarihte okudum ama senin gibisini bilmem…", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(HocaMesajText, "Sen olsan olsan I.Mahvettin falan olurdun heralde.", .05f, true, true);
+        yield return new WaitForSeconds(4);
+        HocaAnim.enabled = false;
     }
     /*ÞUAN KULLANILMIYOR!!*
      * *

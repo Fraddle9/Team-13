@@ -864,6 +864,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2417269132468417116, guid: bb8fa26ae5f59a146aea9f7427cbdce3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417269132468417116, guid: bb8fa26ae5f59a146aea9f7427cbdce3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417269132468417116, guid: bb8fa26ae5f59a146aea9f7427cbdce3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417269132468417116, guid: bb8fa26ae5f59a146aea9f7427cbdce3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2314,7 +2326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7770812483981560618, guid: cbe5d9bb0b97356439dbb17fc87fadb8, type: 3}
       propertyPath: harvestDrops.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7770812483981560618, guid: cbe5d9bb0b97356439dbb17fc87fadb8, type: 3}
       propertyPath: harvestDrops.Array.data[0].itemToDrop
@@ -3117,6 +3129,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7781636531010449661, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7781636531010449663, guid: bed11010dc1f68e4e9a943b83b01deb1, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -3522,6 +3538,14 @@ PrefabInstance:
       propertyPath: interactor
       value: 
       objectReference: {fileID: 1667082158}
+    - target: {fileID: 3838555409964512364, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821050341846710941, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8868295001114155645, guid: 2d2351863de3fbb4c904b03404396f0c, type: 3}
       propertyPath: carrier
       value: 

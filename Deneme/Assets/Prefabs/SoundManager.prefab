@@ -52,7 +52,7 @@ MonoBehaviour:
     hasCooldown: 1
     source: {fileID: 0}
   - name: HeroAttack
-    clip: {fileID: 8300000, guid: 89f7628e119a1924ebc7287b604ed1e9, type: 3}
+    clip: {fileID: 8300000, guid: 6be716b5901224948a9b80f998d15f60, type: 3}
     volume: 1
     pitch: 1
     isLoop: 0
