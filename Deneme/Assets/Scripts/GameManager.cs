@@ -16,10 +16,15 @@ public class GameManager : MonoBehaviour
     public GameObject interaction;
     public GameObject interactionGokyuzu;
     public GameObject dikiliTasObje;
+    public GameObject _fiveTablet;
     public Light2D GokyuzuGlobalisik;
     public GameObject Yarasalar;
     public GameObject GirisKonusma;
     public GameObject _kitap;
+    public GameObject _kitapHikaye;
+    public GameObject _kitapLoc;
+    public GameObject _kitapKisi;
+    public GameObject OyunSonu;
     private TextWriter.TextWriterSingle textWriterSingle;
 
     private void Awake()
@@ -30,6 +35,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         _kitap.gameObject.SetActive(false);
+        _kitapHikaye.gameObject.SetActive(false);
+        _kitapKisi.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -117,6 +124,20 @@ public class GameManager : MonoBehaviour
             arkeologButon.transform.parent.gameObject.SetActive(false);
             Destroy(collision.gameObject);
             StartCoroutine(DikilitasTwo());
+        }
+
+        if (collision.gameObject.name == "GitarBul")
+        {
+            StopAllCoroutines();
+            HocaAnim.enabled = false;
+            arkeologButon.transform.parent.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
+            StartCoroutine(GitarB());
+        }
+
+        if (collision.gameObject.name == "Credit")
+        {
+            StartCoroutine(OyunSonuIE());
         }
     }
 
@@ -401,11 +422,24 @@ public class GameManager : MonoBehaviour
         HocaAnim.enabled = false;
     }
 
+    IEnumerator GitarB()
+    {
+        //Hoca
+        HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "Çal keke çal… Hadi iyisin ciks bir itemin oldu.", .05f, true, true);
+        yield return new WaitForSeconds(4);
+        TextWriter.AddWriter_Static(HocaMesajText, "Karanlýðýn gücünü yenmek için yüce Mergen'in yaþadýðý göðün 7.katýndan buraya býrakýlmýþ yedi ipucu var.", .05f, true, true);
+        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(HocaMesajText, "7x7 kaç eder önce bunu bul sonra notlarý bul.", .05f, true, true);
+        yield return new WaitForSeconds(4);
+        HocaAnim.enabled = false;
+    }
     public void Basarisiz()
     {
         StartCoroutine(BasarisizIE());
     }
 
+    
     IEnumerator BasarisizIE()
     {
         //Hoca
@@ -415,6 +449,33 @@ public class GameManager : MonoBehaviour
         TextWriter.AddWriter_Static(HocaMesajText, "Sen olsan olsan I.Mahvettin falan olurdun heralde.", .05f, true, true);
         yield return new WaitForSeconds(4);
         HocaAnim.enabled = false;
+    }
+
+    public void YanlisCevap()
+    {
+        StartCoroutine(YanlisCevapIE());
+    }
+
+
+    IEnumerator YanlisCevapIE()
+    {
+        //Hoca
+        HocaAnim.enabled = true;
+        TextWriter.AddWriter_Static(HocaMesajText, "Oðlum bu baya sevgili Barýþ Manço’nun 87 yýlýndaki Anahtar þarkýsý.", .05f, true, true);
+        yield return new WaitForSeconds(5);
+        HocaAnim.enabled = false;
+    }
+
+    public void fiveTablet()
+    {
+        Instantiate(_fiveTablet, new Vector3(transform.position.x + 1f, transform.position.y), Quaternion.identity);
+    }
+
+    IEnumerator OyunSonuIE()
+    {
+        OyunSonu.gameObject.SetActive(true);
+        yield return new WaitForSeconds(6);
+        SceneManager.LoadScene("Credits");
     }
 
     /*ÞUAN KULLANILMIYOR!!*

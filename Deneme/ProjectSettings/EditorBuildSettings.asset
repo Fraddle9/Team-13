@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GokyuzuDonus.unity
     guid: c34f24e3dc7e0d8448fe1e659b213925
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1ba6a97857c0351418bbb7bf7a513e84
   m_configObjects: {}

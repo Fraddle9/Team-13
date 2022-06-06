@@ -287,7 +287,7 @@ public class BookManager : MonoBehaviour
         tabletamount = XEntity.Interactor.instance.amount;
         //Debug.Log(yazitbuton[tabletamount].GetComponent<Image>().color.a);
 
-        if (counter < 4)
+        if (counter < 3)
         {
             Debug.Log("in");
             yazitbuton[counter].GetComponent<Image>().color = alphaOne;

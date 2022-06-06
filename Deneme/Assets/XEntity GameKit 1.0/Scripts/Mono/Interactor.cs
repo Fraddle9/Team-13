@@ -134,7 +134,11 @@ namespace XEntity
             if (item.name == "Tablet") BookManager.instance.ActivateLeftButton();
             CheckInventory();
 
-            TaskManager.instance.UpdateTask();
+            if (TaskManager.instance != null)
+            {
+                TaskManager.instance.UpdateTask();
+            }
+            
 
             //HaveItems = HaveItems.Distinct().ToList();
             //Debug.Log("AddtoInventory: item " + item + " instance " + instance);

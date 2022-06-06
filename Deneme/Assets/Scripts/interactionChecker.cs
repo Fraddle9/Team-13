@@ -62,7 +62,8 @@ public class interactionChecker : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
+        alphaZero = new Color(0, 0, 0, 0);
+        alphaOne = new Color(255, 255, 255, 255);
         if (collision.tag == "Player")
         {
             Debug.Log("Triggered");
