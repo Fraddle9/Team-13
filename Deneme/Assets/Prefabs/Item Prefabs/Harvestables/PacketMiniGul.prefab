@@ -116,8 +116,6 @@ MonoBehaviour:
     chance: 1
   - itemToDrop: {fileID: 11400000, guid: f76feda4e7f1b25498476b5bddfa1547, type: 2}
     chance: 1
-  - itemToDrop: {fileID: 11400000, guid: f76feda4e7f1b25498476b5bddfa1547, type: 2}
-    chance: 1
 --- !u!54 &-2398257526554011988
 Rigidbody:
   m_ObjectHideFlags: 0

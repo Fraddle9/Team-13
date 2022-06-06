@@ -44,6 +44,7 @@ namespace XEntity
         public string message2 = ("Susadým çeþmeye\n -Can suyu 0/1");
         public string message3 = ("Anahtarlar\n -Anahtar 0/1");
 
+        [SerializeField] BookManager _bookmanager;
 
         List<string> HaveItems = new List<string>();
 
@@ -75,8 +76,8 @@ namespace XEntity
             RaycastHit hit;
 
 
-            
-            
+
+
 
             if (Physics.Raycast(ray, out hit) && InRange(hit.transform.position) == true && hit.transform.tag != "Zemin")
             {
@@ -88,7 +89,7 @@ namespace XEntity
                     Debug.Log("name is chest");
                     if (HaveItems.Contains("Tablet"))
                     {
-                        
+
                         Debug.Log("List contains = Tablet");
                         interactionTarget = target;
                         //Debug.Log(HaveItems);
@@ -106,7 +107,7 @@ namespace XEntity
             {
 
             }
-            
+
             if (Input.GetKeyDown(KeyCode.F)) InitInteraction();
         }
 
@@ -130,7 +131,7 @@ namespace XEntity
             if (inventory.AddItem(item))
                 if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
             HaveItems.Add(item.name);
-
+            if (item.name == "Tablet") BookManager.instance.ActivateLeftButton();
             CheckInventory();
 
             TaskManager.instance.UpdateTask();
@@ -154,9 +155,9 @@ namespace XEntity
                     else
                     {
                         message = ("Açlýk Sýnýrý\n -Altýn " + amount + "/10");
-                        Debug.Log("0 = " + message);
+                        //Debug.Log("0 = " + message);
                     }
-                    
+
                 }
                 else if (!HaveItems.Contains("Coin")) { message = ("Açlýk Sýnýrý\n -Altýn 0/10"); }
 
@@ -173,9 +174,9 @@ namespace XEntity
                     else
                     {
                         message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý " + amount + "/3");
-                        Debug.Log("1 = " + message1);
+                        //Debug.Log("1 = " + message1);
                     }
-                    
+
                 }
                 else if (!HaveItems.Contains("Tablet")) { message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý 0/3"); }
 
@@ -188,9 +189,9 @@ namespace XEntity
                     else
                     {
                         message2 = ("Susadým çeþmeye\n -Can suyu " + amount + "/1");
-                        Debug.Log("2 = " + message2);
+                        //Debug.Log("2 = " + message2);
                     }
-                    
+
                 }
                 else if (!HaveItems.Contains("Holy Water")) { message2 = ("Susadým çeþmeye\n -Can suyu 0/1"); }
 
@@ -203,9 +204,9 @@ namespace XEntity
                     else
                     {
                         message3 = ("Anahtarlar\n -Anahtar " + amount + "/1");
-                        Debug.Log("3 = " + message3);
+                        //Debug.Log("3 = " + message3);
                     }
-                    
+
                 }
                 else if (!HaveItems.Contains("Key")) { message3 = ("Anahtarlar\n -Anahtar 0/1"); }
 
@@ -217,6 +218,6 @@ namespace XEntity
             //message2 = (key + " " + amount + "/" + need);
             //message3 = (key + " " + amount + "/" + need);
         }
-        
+
     }
 }

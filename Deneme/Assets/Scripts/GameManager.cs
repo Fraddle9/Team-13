@@ -19,11 +19,17 @@ public class GameManager : MonoBehaviour
     public Light2D GokyuzuGlobalisik;
     public GameObject Yarasalar;
     public GameObject GirisKonusma;
+    public GameObject _kitap;
     private TextWriter.TextWriterSingle textWriterSingle;
 
     private void Awake()
     {
+        
+    }
 
+    private void Start()
+    {
+        _kitap.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -144,6 +150,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator IlkDusme()
     {
+
         yield return new WaitForSeconds(2);
         GirisKonusma.gameObject.SetActive(true);
         yield return new WaitForSeconds(53);
@@ -200,6 +207,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DikiliTas()
     {
+        
         //Arkeolog
         arkeologButon.transform.parent.gameObject.SetActive(true);
         TextWriter.AddWriter_Static(ArkeologMesajText, "Ýlerde bir dikilitaþ görüyorum.", .05f, true, true);
