@@ -187,6 +187,10 @@ https://user-images.githubusercontent.com/104396833/172179266-b4624e12-4257-436e
 
 
 
+https://user-images.githubusercontent.com/104396833/172220850-d8ee82e4-cd53-4d44-acd6-4382d1dba5a4.mp4
+
+
+
 
 https://user-images.githubusercontent.com/104396833/172179316-5c75e465-e72d-4576-8277-040fc692a3f7.mp4
 
@@ -201,7 +205,7 @@ https://user-images.githubusercontent.com/104396833/172179316-5c75e465-e72d-4576
 Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Recep Akkaya, İrem Kayacıoğlu
 
 - **Sprint Retrospective:**
-  - Görev dağılımı backloga göre yapılmıştır. Toplantı kayıtları ve notlar alınması yerine son sprintte günlük toplantılara dönülmüştür. Katılan arkadaşlar ile yapılan işlerin değerlendirilmesi ve yapılandırılması üzerine konuşulmuştur. Free edinilen assetler ReadMe'de paylaşılmış olup, tasarım ve diğer grup içi çalışma dosyalarına ulaşmanız için drive linkleri eklenmiştir. 
+  - Görev dağılımı backloga göre yapılmıştır, bitiş tarihleri daha gevşek tutulmuştur sınav ve okul döngüsü nedeniyle. Toplantı kayıtları ve notlar alınması yerine son sprintte günlük toplantılara dönülmüştür. Katılan arkadaşlar ile yapılan işlerin değerlendirilmesi ve yapılandırılması üzerine konuşulmuştur. Free edinilen assetler ReadMe'de paylaşılmış olup, level tasarımında büyük ölçüde yararlanılmıştır. Tasarım ve diğer grup içi çalışma dosyalarına ulaşmanız için drive linkleri eklenmiştir. 
  
 
 -**Diğer Notlar**:
