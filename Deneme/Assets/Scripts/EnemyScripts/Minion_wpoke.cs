@@ -268,6 +268,9 @@ public class Minion_wpoke : MonoBehaviour
         if (playerOnline /*&& CalculatedTime <= 0*/)
         {
             ChangeAnimationState(attack);
+            
+            FindObjectOfType<SoundManager>().Play("Öcü");
+            
             StartCoroutine(backtoIdle());
         }
 
@@ -304,6 +307,7 @@ public class Minion_wpoke : MonoBehaviour
     void Die()
     {
         ChangeAnimationState(death);
+        FindObjectOfType<SoundManager>().Play("Öcü");
         movement = new Vector3(transform.position.x, -3.17f, transform.position.z);
         transform.position = movement;
         GetComponent<Collider2D>().enabled = false;

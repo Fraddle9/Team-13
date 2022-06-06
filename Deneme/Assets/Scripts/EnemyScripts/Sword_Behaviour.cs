@@ -57,6 +57,21 @@ public class Sword_Behaviour : MonoBehaviour
         colliders = gameObject.GetComponentsInChildren<Collider2D>();
     }
 
+    private void FixedUpdate()
+    {
+        if (gameObject.name=="BossGulyabani" && anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack"))
+        {
+            FindObjectOfType<SoundManager>().Play("GulyabaniAttack");
+        }
+    }
+    private void OnEnable()
+    {
+        if (gameObject.name == "Bat")
+        {
+            FindObjectOfType<SoundManager>().Play("Bat");
+        }
+    }
+
     void Update()
     {
         if (!attackMode)
@@ -106,7 +121,7 @@ public class Sword_Behaviour : MonoBehaviour
     void CloseGap()
     {
         anim.Play("Enemy_walk"); //animasyon
-
+       
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Enemy_attack")) //animation name here
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
@@ -120,7 +135,7 @@ public class Sword_Behaviour : MonoBehaviour
         
         if (isHurt)
         {
-            
+           
             return;
         }
         if (!isAvailable)
@@ -132,6 +147,11 @@ public class Sword_Behaviour : MonoBehaviour
         else if (isAvailable)
         {
             anim.Play("Enemy_attack");
+            if(gameObject.name == "Skeleton")
+            {
+                FindObjectOfType<SoundManager>().Play("SkeletonAttack");
+            }
+                     
         }
 
         timer = intTimer; //reset timer when player attacks
@@ -222,6 +242,10 @@ public class Sword_Behaviour : MonoBehaviour
 
     void Die()
     {
+        if (gameObject.name == "Skeleton")
+        {
+            FindObjectOfType<SoundManager>().Stop("SkeletonAttack");
+        }
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         anim.Play("Enemy_dead");
