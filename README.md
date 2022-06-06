@@ -210,6 +210,8 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 
 -**Diğer Notlar**:
 
+- [Level1 Hikaye](https://docs.google.com/document/d/1eP88HKz5L0qWGnow9kgw4P4mjaveavJi0N9xyqw4QPg/edit)
+- [Level2 Hikaye](https://docs.google.com/document/d/1InVe9bGLkAzF9suuBY6LNkSFN6-mMdfWGRz6UZ7B5qs/edit) 
 - [GDD](https://docs.google.com/document/d/1QgT50tgwwwQbuMPBvbR4F2SbBeshgG1Km0NdTPPwuIk/edit?usp=sharing)
 - [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
 - [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
