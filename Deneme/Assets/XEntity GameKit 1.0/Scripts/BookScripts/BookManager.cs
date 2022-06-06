@@ -8,6 +8,7 @@ using UnityEngine;
 public class BookManager : MonoBehaviour
 {
     //public GameObject yazit;
+    public static BookManager instance;
     public GameObject icerikHikaye;
     public GameObject icerikKisiler;
     public GameObject[] yazitlar;
@@ -20,6 +21,9 @@ public class BookManager : MonoBehaviour
     public GameObject VLayrintikisi;
     public GameObject locked;
     public GameObject lockedkisi;
+    public GameObject[] yazitbuton;
+    public int counter = 0;
+
     public Color alphaZero;
     public Color alphaOne;
     public string[] info;
@@ -31,11 +35,13 @@ public class BookManager : MonoBehaviour
     //public string info4;
     public TextMeshProUGUI[] text;
     public Image image;
+    public int tabletamount;
 
     // Start is called before the first frame update
     void Start()
     {
         //yazit = GameObject.Find("Yazit2");
+        yazitbuton = GameObject.FindGameObjectsWithTag("Ikon");
         icerikHikaye = GameObject.Find("icerikHikaye");
         icerikKisiler = GameObject.Find("icerikKisiler");
         yazitlar = GameObject.FindGameObjectsWithTag("YazýtButonu");
@@ -59,11 +65,11 @@ public class BookManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        instance = this;
     }
 
     public void UpdateRightSide()
-    { //ifler gelcek. eðer image açýksa sað taraf da açýk. deðilse deðil. açýksa texti deðiþ.
+    { 
 
         icerikHikaye = GameObject.Find("icerikHikaye");
         icerikKisiler = GameObject.Find("icerikKisiler");
@@ -129,7 +135,7 @@ public class BookManager : MonoBehaviour
                         //Debug.Log(obje);
                         //Debug.Log("Length is = " + buttonImages.Length);
 
-                        if (buttonImages[i].color.a == 1) //if visible
+                        if (buttonImages[i].color.a == 1 || buttonImages[i].color.a == 255) //if visible
                         {
                             pageImages[0].color = alphaOne;
                             if (locked != null) locked.SetActive(false);
@@ -159,7 +165,7 @@ public class BookManager : MonoBehaviour
                             //Debug.Log("ikon is not active");
                             text[0].text = " Kilitli ";
                             text[1].text = " Kilitli ";
-                            pageImages[0].color = alphaZero;
+                            //pageImages[0].color = alphaZero;
                             locked.SetActive(true);
                         }
                     }
@@ -177,12 +183,12 @@ public class BookManager : MonoBehaviour
                 lockedkisi.SetActive(true);
 
                 info = new string[] {
-                "Türk ve Altay mitolojisinde Ýyilik Tanrýsýdýr. Göðün 16. katýnda yaþar. Kayra Han’ýn oðludur. Türk mitolojisinde (Tengricilik döneminde) Türklerin iyilik tanrýsýdýr. Tek Tanrý inancýnda Göktanrý'nýn oðlu ve gökyüzünün hükümdarý olarak görülmüþtür. Bai Ulgan, Ulgan gibi adlarla Sibirya kavimlerince de yaratýcý tanrý olarak anýlýr.Göðün 16. katýnda oturan Kayra Han'dan 'dönüþüm' yoluyla yaratýlan göksel üç tanrý sýralamasýnda ilk sýrada yer alan ve göðün on yedinci (veya on altýncý) katýnda oturduðuna inanýlan, hava durumunu, verimliliði ve doðurganlýðý yönettiði kabul edilen, sonralarý iþlevlenerek Göktanrý'nýn yerini alan tanrýdýr.",//1
-                "Türk mitolojisinde yeraltý aleminin efendisi olan Erlik Han, kötülüðü sembolize eden tanrýdýr. Ölüme ve kötülüðe hükmeden tanrý Erlik, yeraltýnýn en alt katmanýnda çamurdan yapýlmýþ bir sarayda oturur. \n Yerlik kelimesinden türeyen bu isim; güç, yeraltý ve kötü kuvvet gibi anlamlarý ifade eder. Bu kelime Buryatçada kan içen, eski Kýrgýzcada kötü güç, Altaylara göre ise “güçlü, kuvvetli” anlamýna gelir. Onun temsil ettiði kötü ruhlar sadece ölüm ve hastalýk getirir.\n Altaylarýn yaratýlýþ efsanesine göre, Erlik Han dünya yaratýlýrken Tengri’ye büyük bir kötülük yapar. Bu nedenle Tengri onu cezalandýrarak yeraltý dünyasýna gönderir.",//2
-                "Gulyabani veya Gul-i beyabani, orijinal söyleyiþiyle de karþýmýza çýkan bu mahlûk, gezginlere ve yolculara uðrayýp onlarý mahveden canavardýr. Daha sonralarý Anadolu kültüründe ahubabayla beraber anýlmaya baþlamýþ ve insan yediði düþünülen kocaman, uzun sakallý ve asalý bir dev olarak tasavvur olunmuþtur.",//3
-                "dört",//4
-                "beþ",//5
-                "altý",//6
+                "Ülgen, Türk ve Altay mitolojisinde Ýyilik Tanrýsýdýr. Göðün 16. katýnda yaþar. Kayra Han’ýn oðludur. Türk mitolojisinde (Tengricilik döneminde) Türklerin iyilik tanrýsýdýr. Tek Tanrý inancýnda Göktanrý'nýn oðlu ve gökyüzünün hükümdarý olarak görülmüþtür. Bai Ulgan, Ulgan gibi adlarla Sibirya kavimlerince de yaratýcý tanrý olarak anýlýr.Göðün 16. katýnda oturan Kayra Han'dan 'dönüþüm' yoluyla yaratýlan göksel üç tanrý sýralamasýnda ilk sýrada yer alan ve göðün on yedinci (veya on altýncý) katýnda oturduðuna inanýlan, hava durumunu, verimliliði ve doðurganlýðý yönettiði kabul edilen, sonralarý iþlevlenerek Göktanrý'nýn yerini alan tanrýdýr.",//1
+                "Tepegöz, Türk mitolojisinde de adý geçen tek gözlü devdir. Kaf daðýnda yaþar. Annesi alageyik donuna girebilen bir peridir. Bu perinin bir çobanla birleþmesinden doðmuþtur. Bazen diþi, bazen de erkek Tepegöz’lere rastlanabilir.",//2
+                "Gulyabani veya Gul-i beyabani, orijinal söyleyiþiyle de karþýmýza çýkan bu mahlûk, gezginlere ve yolculara uðrayýp onlarý mahveden canavardýr. Daha sonralarý Anadolu kültüründe ahubabayla beraber anýlmaya baþlamýþ ve insan yediði düþünülen kocaman, uzun sakallý ve asalý bir dev olarak tasavvur olunmuþtur.  sulara tekrar dalmýþtýr. Iþýktan (cisimsel olmayan) bir bedeni vardýr. Baþýnda gücü simgeleyen ve taca benzeyen zarif boynuzlarý bulunur. Alt kýsmýnda denizkýzý gibi çok uzun bir balýk kuyruðu bulunur. Kuyruðu hafif maviye çalan bir renktedir.",//3
+                "Ak Ana, Türk mitolojilerinde Deniz Tanrýçasý. Henüz hiçbir þey yaratýlmamýþken ve yalnýzca uçsuz bucaksýz bir su varken, sonsuz sulardan çýkarak, Tanrý Ülgen’e yaratma ilhamýný vererek",//4
+                "Ayisit, Türk ve Altay mitolojilerinde güzellik tanrýçasýdýr. Ayzýt’ýn kýzlarý vardýr. Onlar da kuðu kýlýðýna bürünebilirler. Sümerlerde Ay Tanrýçasý olan Ay'a da ýþýk saçmaktadýr ve adý da bu anlamla baðlantýlýdýr. Aþk her zaman ýþýkla ve parlaklýkla simgelenmektedir. “Aþk ateþi gözlerimi kör etti” ifadesi bunun en belirgin anlatýmýdýr.",//5
+                "Þaman, Türk Mitolojisinde  insanlar ile ruhlar arasýnda iletiþim kurarak þifa saðladýklarýna inanýlan kiþilerin adýdýr.",//6
                 "yedi",//7
                 "sekiz",//8
                 "dokuz",//9
@@ -194,11 +200,11 @@ public class BookManager : MonoBehaviour
 
                 headline = new string[] {
                 "Ülgen",
-                "Erlik",
+                "Tepegöz",
                 "Gulyabani",
-                "4. Sayfa Baþlýðý",
-                "5. Sayfa Baþlýðý",
-                "6. Sayfa Baþlýðý",
+                "Ak Ana",
+                "Ayisit'in Kýzlarý",
+                "Þaman",
                 "7. Sayfa Baþlýðý",
                 "8. Sayfa Baþlýðý",
                 "9. Sayfa Baþlýðý",
@@ -225,11 +231,11 @@ public class BookManager : MonoBehaviour
                         //Debug.Log(obje);
                         //Debug.Log("Length is = " + buttonImages.Length);
 
-                        if (buttonImages[i].color.a == 1) //if visible
+                        if (buttonImages[i].color.a == 1 || buttonImages[i].color.a == 255) //if visible
                         {
                             pageImages[0].color = alphaOne;
                             lockedkisi.SetActive(false);
-                            Debug.Log("ikon is active alpha is 1");
+                            //Debug.Log("ikon is active alpha is 1");
                             //Debug.Log(obje);
 
                             if (pageImages[0].tag == "Ikon")
@@ -254,15 +260,36 @@ public class BookManager : MonoBehaviour
                             //Debug.Log("ikon is not active");
                             text[0].text = " Kilitli ";
                             text[1].text = " Kilitli ";
-                            pageImages[0].color = alphaZero;
+                            //pageImages[0].color = alphaZero;
                             lockedkisi.SetActive(true);
                         }
                     }
                 }
 
+                //Debug.Log(buttonImages[1]);
+
             }
         }
 
+
+
+    }
+
+    public void ActivateLeftButton()
+    {
+        alphaOne = new Color(255, 255, 255, 255);
+        //Debug.Log(XEntity.Interactor.instance.amount);
+        tabletamount = XEntity.Interactor.instance.amount;
+        //Debug.Log(yazitbuton[tabletamount].GetComponent<Image>().color.a);
+
+        if (counter < 4)
+        {
+            Debug.Log("in");
+            yazitbuton[counter].GetComponent<Image>().color = alphaOne;
+        }
+        Debug.Log(yazitbuton[counter]);
+        counter++;
+        Debug.Log("counter" + counter);
 
 
     }

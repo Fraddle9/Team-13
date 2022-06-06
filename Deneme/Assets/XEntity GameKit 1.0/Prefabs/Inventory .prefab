@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8060343720380838855}
   - component: {fileID: 8060343720380838854}
+  - component: {fileID: 9189619939448806541}
   m_Layer: 5
   m_Name: 'Inventory '
   m_TagString: Untagged
@@ -53,7 +54,19 @@ MonoBehaviour:
   carrier: {fileID: 0}
   UIToggleKey: 105
   dropRemovedItemPrefabs: 1
-  itemcs: {fileID: 0}
+  slots: []
+--- !u!114 &9189619939448806541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060343720380838848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e1c53bd0681ed46bfb4bda070b85fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5691441215916632591
 PrefabInstance:
   m_ObjectHideFlags: 0

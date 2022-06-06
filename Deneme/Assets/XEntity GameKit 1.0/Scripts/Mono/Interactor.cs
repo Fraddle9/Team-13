@@ -130,7 +130,7 @@ namespace XEntity
             if (inventory.AddItem(item))
                 if (instance) StartCoroutine(Utils.TweenScaleOut(instance, 50, true));
             HaveItems.Add(item.name);
-
+            if (item.name == "Tablet") BookManager.instance.ActivateLeftButton();
             CheckInventory();
 
             TaskManager.instance.UpdateTask();
@@ -154,7 +154,7 @@ namespace XEntity
                     else
                     {
                         message = ("Açlýk Sýnýrý\n -Altýn " + amount + "/10");
-                        Debug.Log("0 = " + message);
+                        //Debug.Log("0 = " + message);
                     }
                     
                 }
@@ -173,7 +173,7 @@ namespace XEntity
                     else
                     {
                         message1 = ("Cahilliði üstünden at\n -Kaðýt parçasý " + amount + "/3");
-                        Debug.Log("1 = " + message1);
+                        //Debug.Log("1 = " + message1);
                     }
                     
                 }
@@ -188,7 +188,7 @@ namespace XEntity
                     else
                     {
                         message2 = ("Susadým çeþmeye\n -Can suyu " + amount + "/1");
-                        Debug.Log("2 = " + message2);
+                        //Debug.Log("2 = " + message2);
                     }
                     
                 }
@@ -203,7 +203,7 @@ namespace XEntity
                     else
                     {
                         message3 = ("Anahtarlar\n -Anahtar " + amount + "/1");
-                        Debug.Log("3 = " + message3);
+                        //Debug.Log("3 = " + message3);
                     }
                     
                 }
