@@ -155,10 +155,6 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 
 # Sprint 3
 
----
-# ![Sprint 3]
-
-
 - **Sprint Notları**: 
     - [2.Sprint İş Paylaşımı](https://docs.google.com/document/d/11Fa3QlriOQh_sHqcuQ-V9aF_XlqqEXkfw2nQ6FU1fYk/edit?usp=sharing)
 
