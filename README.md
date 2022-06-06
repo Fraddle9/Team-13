@@ -8,15 +8,18 @@ Takım 13
 
 ## Takım Üyeleri
 
-- Nuh Aktürk: Product Owner/Developer
+- Nuh Aktürk: Product Owner/ Level Designer
 - Dilek Oflaz: Scrum Master / Game Artist
-- Oğuzhan Akkök: Game Artist / Developer
-- İrem Ayşe Kayacıoğlu: Team Member/Developer
-- Recep Akkaya: Team Member/Developer
+- Oğuzhan Akkök: Pixel Artist / Developer
+- İrem Ayşe Kayacıoğlu: Team Member/ Developer
+- Recep Akkaya: Team Member/ Developer
 
 ## Ürün İsmi 
 
---Noname Pixel Art Game--
+--13.Gece--
+ 
+![logo](https://user-images.githubusercontent.com/104396833/172195256-69b87ee1-0a0c-4f3e-a673-6e594ccd5f67.jpeg)
+
 
 ## Ürün Açıklaması
 
@@ -156,13 +159,13 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 # Sprint 3
 
 - **Sprint Notları**: 
-    - [2.Sprint İş Paylaşımı](https://docs.google.com/document/d/11Fa3QlriOQh_sHqcuQ-V9aF_XlqqEXkfw2nQ6FU1fYk/edit?usp=sharing)
+    - [3.Sprint İş Paylaşımı](https://docs.google.com/document/d/1Bj_Km0wyjUSk4AVlTgtnQHdvCq2CrBW-4V-gCWwKKQs/edit?usp=sharing)
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint tasarım ve mekaniğe giriş ve geliştirme yapıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
-  - [2.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
-  - [2.SPRINT VISUAL](.)
+  - [3.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
+  - [3.SPRINT VISUAL](https://github.com/Fraddle9/Team-13/files/8845409/3.SPRINTDONE.pdf)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, üçüncü sprint bölümünde çoğunlukla toparlama ve bug çözme kısmına yoğunlaşılmıştır. 
 
@@ -172,13 +175,11 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![trello çalışma alanı 1](https://user-images.githubusercontent.com/104396833/172178031-177180cd-4bf4-47cb-afd7-4b5ce20d8464.PNG)
-![trello çalışma alanı 2] ![t3](https://user-images.githubusercontent.com/104396833/172178122-616f7793-199c-403b-8340-904dbda724c6.PNG)
+![trello çalışma alanı 2](https://user-images.githubusercontent.com/104396833/172178122-616f7793-199c-403b-8340-904dbda724c6.PNG)
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
  
-
-
 
 
 https://user-images.githubusercontent.com/104396833/172179266-b4624e12-4257-436e-a3b4-c33e1d6f2bb0.mp4
@@ -204,7 +205,10 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
  
 
 -**Diğer Notlar**:
-- 
+
+- [GDD](https://docs.google.com/document/d/1QgT50tgwwwQbuMPBvbR4F2SbBeshgG1Km0NdTPPwuIk/edit?usp=sharing)
 - [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
 - [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
 - [Çalışma Ekran Görüntüleri](https://drive.google.com/drive/u/0/folders/1QhdIp0-0MQTzu84KOdliSv7XTC2SDWDG)
+- [Drive Link](https://drive.google.com/drive/u/0/folders/1F_Sas6_uq9YkOfBbP3dDibq0B7smZ9Wc) 
+- [Level Design](https://drive.google.com/drive/u/0/folders/1I3uQFsMeEQ2KNYb5PKkrt-bQ2pxDlmgs) 
