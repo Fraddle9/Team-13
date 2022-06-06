@@ -161,8 +161,8 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi. Bu sprint tasarım ve mekaniğe giriş ve geliştirme yapıldı. 2. Sprint'te daha yoğun çalışma ve iş bölümü olacağı için 200 puan son sprint ise yine 100 puan şeklinde düşünüldü.
-  - [2.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
-  - [2.SPRINT VISUAL](.)
+  - [3.SPRINT BACKLOG LIST](https://docs.google.com/document/d/1ZH2OZFYhCVMZtCE8BzUJ7f-riZ1BcZ4fhKlbCNL9IlM/edit?usp=sharing)
+  - [3.SPRINT VISUAL] (https://github.com/Fraddle9/Team-13/files/8845409/3.SPRINTDONE.pdf)
 
 - **Backlog düzeni ve Story seçimleri**: Timeline şeklinde tüm sprint için backlog oluşturulmuş ve genel/ değişken atamalar yapılmıştır. İçerisinde görev atamalarının dağılımı işin bitme sürecine göre dağıtılmış olup, üçüncü sprint bölümünde çoğunlukla toparlama ve bug çözme kısmına yoğunlaşılmıştır. 
 
@@ -177,8 +177,6 @@ Timeline'da yapılacak işler Trello'da iş listesinde daha detaylı şekilde ye
 
 - **Ürün Durumu**: Ekran görüntüleri:
  
-
-
 
 
 https://user-images.githubusercontent.com/104396833/172179266-b4624e12-4257-436e-a3b4-c33e1d6f2bb0.mp4
@@ -208,3 +206,5 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 - [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
 - [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
 - [Çalışma Ekran Görüntüleri](https://drive.google.com/drive/u/0/folders/1QhdIp0-0MQTzu84KOdliSv7XTC2SDWDG)
+- [Drive Link](https://drive.google.com/drive/u/0/folders/1F_Sas6_uq9YkOfBbP3dDibq0B7smZ9Wc) 
+- [Level Design](https://drive.google.com/drive/u/0/folders/1I3uQFsMeEQ2KNYb5PKkrt-bQ2pxDlmgs) 
