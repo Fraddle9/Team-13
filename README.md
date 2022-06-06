@@ -16,7 +16,9 @@ Takım 13
 
 ## Ürün İsmi 
 
---Noname Pixel Art Game--
+--13.Gece--
+(https://user-images.githubusercontent.com/104396833/172193907-34a47610-7bb9-4712-b5d7-d3347cfbf405.jpeg)
+
 
 ## Ürün Açıklaması
 
@@ -156,7 +158,7 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
 # Sprint 3
 
 - **Sprint Notları**: 
-    - [2.Sprint İş Paylaşımı](https://docs.google.com/document/d/11Fa3QlriOQh_sHqcuQ-V9aF_XlqqEXkfw2nQ6FU1fYk/edit?usp=sharing)
+    - [3.Sprint İş Paylaşımı](https://docs.google.com/document/d/1Bj_Km0wyjUSk4AVlTgtnQHdvCq2CrBW-4V-gCWwKKQs/edit?usp=sharing)
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
@@ -202,7 +204,8 @@ Sprint Review katılımcıları: Nuh Aktürk, Dilek Oflaz, Oğuzhan Akkök, Rece
  
 
 -**Diğer Notlar**:
-- 
+
+- [GDD](https://docs.google.com/document/d/1QgT50tgwwwQbuMPBvbR4F2SbBeshgG1Km0NdTPPwuIk/edit?usp=sharing)
 - [Asset Kaynak Listesi](https://docs.google.com/document/d/1eT7it-g4u9n_CrCunyDWK4l9RLw5trfnnQW6G0sibTA/edit)
 - [Art Assets](https://drive.google.com/drive/u/0/folders/1po94J3LU0YsvbHvsS7YK6aIN4zopk5HJ)
 - [Çalışma Ekran Görüntüleri](https://drive.google.com/drive/u/0/folders/1QhdIp0-0MQTzu84KOdliSv7XTC2SDWDG)
