@@ -18,6 +18,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject LevelUp;
     public GameObject Fener;
     public Light2D Globalisik;
+    public GameObject SahneUI;
 
     public static PlayerManager instance;
 
@@ -184,7 +185,10 @@ public class PlayerManager : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.name == "Tuzak" || collision.gameObject.name == "Tuzak2")
+        if (collision.gameObject.name == "Tuzak" || collision.gameObject.name == "Tuzak2"
+            || collision.gameObject.name == "Tuzak3" || collision.gameObject.name == "Tuzak4"
+            || collision.gameObject.name == "Tuzak5")
+
         {
             Debug.Log("Tuzak");
             damageable = true;
@@ -205,6 +209,7 @@ public class PlayerManager : MonoBehaviour
     IEnumerator PortalGecit()
     {
         Globalisik.intensity = 300;
+        SahneUI.gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Gokyuzu");
     }

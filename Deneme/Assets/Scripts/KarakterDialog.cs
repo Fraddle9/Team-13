@@ -12,7 +12,7 @@ public class KarakterDialog : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //
+
     }
 
     private void OnMouseOver()
@@ -20,6 +20,7 @@ public class KarakterDialog : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ConversationManager.Instance.StartConversation(myConversation);
+            ConversationManager.Instance.SetInt("Bitcoin", 3);
         }
     }
 }

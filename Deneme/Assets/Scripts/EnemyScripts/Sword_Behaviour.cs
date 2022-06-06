@@ -38,6 +38,7 @@ public class Sword_Behaviour : MonoBehaviour
 
     Transform PlayerPosition;
     #endregion
+    public GameObject EnemyDropItem;
 
     private void Awake()
     {
@@ -224,6 +225,7 @@ public class Sword_Behaviour : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         anim.Play("Enemy_dead");
+        Instantiate(EnemyDropItem, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
         Invoke("Eliminate", 1.5f);
     }
     private void Eliminate()
