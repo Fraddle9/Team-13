@@ -204,7 +204,7 @@ public class GameManager : MonoBehaviour
         arkeologButon.transform.parent.gameObject.SetActive(true);
         TextWriter.AddWriter_Static(ArkeologMesajText, "Ýlerde bir dikilitaþ görüyorum.", .05f, true, true);
         yield return new WaitForSeconds(3);
-        TextWriter.AddWriter_Static(ArkeologMesajText, "Taþ üzerinde antik bir dil kazýlý hocam. Göktürk Alfabesine benziyor.", .05f, true, true);
+        TextWriter.AddWriter_Static(ArkeologMesajText, "Taþ üzerinde iliþtirilmiþ bir not var hocam. Göktürk Alfabesine benziyor.", .05f, true, true);
         yield return new WaitForSeconds(5);
 
         //Hoca
@@ -373,12 +373,10 @@ public class GameManager : MonoBehaviour
     {
         //Hoca
         HocaAnim.enabled = true;
-        TextWriter.AddWriter_Static(HocaMesajText, "Her fidanýn can suyuna ihtiyacý var. Yeþili sadece dolarýn üzerindeki renk olarak sevenlerden olma.", .05f, true, true);
-        yield return new WaitForSeconds(6);
         TextWriter.AddWriter_Static(HocaMesajText, "Akana sana bir can suyu bahþettiði için þanslýsýn Halet. Bunu sok þimdi koynuna, aman düþürüp kaybetme.", .05f, true, true);
         yield return new WaitForSeconds(6);
-        TextWriter.AddWriter_Static(HocaMesajText, "Ya da boynuna baðla ilkokuldaki silgi gibi. Ha silgi, ha küçükbaþ çaný ne fark ediyor, güdülmeye çok alýþtýnýz...", .05f, true, true);
-        yield return new WaitForSeconds(6);
+        TextWriter.AddWriter_Static(HocaMesajText, "Güdülmeye çok alýþtýnýz, hallet iþte bir þekilde...", .05f, true, true);
+        yield return new WaitForSeconds(4);
         HocaAnim.enabled = false;
     }
 
